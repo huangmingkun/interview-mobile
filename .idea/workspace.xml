@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b5d09c59-5307-471b-982f-68da340d51aa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1bW4g2qyEJnF68m6XrpYbp9ItHZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="$PROJECT_DIR$/../../interview-mobile/node_modules/eslint" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="D:\self-project\vue-project\interview-mobile\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="copyright.filetypes.Vue.js" />
+    <property name="ts.external.directory.path" value="D:\software\webstorm\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\src\views\test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\src\assets\iconfont" />
+      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\src\views\my-components" />
+      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\src\router" />
+      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\src\assets\img\test" />
+      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\src\js\alloyFinger" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b5d09c59-5307-471b-982f-68da340d51aa" name="Default Changelist" comment="" />
+      <created>1582186916868</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582186916868</updated>
+      <workItem from="1582186918010" duration="15574000" />
+      <workItem from="1582361518838" duration="761000" />
+      <workItem from="1582453683652" duration="18071000" />
+      <workItem from="1583113129609" duration="947000" />
+      <workItem from="1583117450120" duration="3061000" />
+      <workItem from="1583197855666" duration="8557000" />
+      <workItem from="1583222505719" duration="1285000" />
+      <workItem from="1583225437384" duration="1148000" />
+      <workItem from="1583804951438" duration="1527000" />
+      <workItem from="1583906141418" duration="5581000" />
+      <workItem from="1583983830441" duration="7190000" />
+      <workItem from="1584062095120" duration="16730000" />
+      <workItem from="1584345935113" duration="869000" />
+      <workItem from="1584670912179" duration="6585000" />
+      <workItem from="1584927260047" duration="2410000" />
+      <workItem from="1585126136025" duration="3075000" />
+      <workItem from="1585276738453" duration="8438000" />
+      <workItem from="1585807370272" duration="11132000" />
+      <workItem from="1586239670405" duration="1969000" />
+      <workItem from="1586314980269" duration="1238000" />
+      <workItem from="1586330909553" duration="483000" />
+      <workItem from="1586765754422" duration="9943000" />
+      <workItem from="1586832407800" duration="1204000" />
+      <workItem from="1586938528875" duration="423000" />
+      <workItem from="1587552110974" duration="959000" />
+      <workItem from="1587625818159" duration="1869000" />
+      <workItem from="1588734625036" duration="1537000" />
+      <workItem from="1588840674674" duration="5965000" />
+      <workItem from="1589015805141" duration="1615000" />
+      <workItem from="1589162680794" duration="19000" />
+      <workItem from="1589162712256" duration="1268000" />
+      <workItem from="1589179194905" duration="1699000" />
+      <workItem from="1589358204568" duration="1279000" />
+      <workItem from="1589521534329" duration="26000" />
+      <workItem from="1589522134982" duration="7757000" />
+      <workItem from="1589769936194" duration="2303000" />
+      <workItem from="1589787038954" duration="1441000" />
+      <workItem from="1589850323684" duration="599000" />
+      <workItem from="1589871239713" duration="1011000" />
+      <workItem from="1590374408296" duration="1742000" />
+      <workItem from="1590737810638" duration="3025000" />
+      <workItem from="1591066944691" duration="10228000" />
+      <workItem from="1591587092011" duration="1558000" />
+      <workItem from="1591599600601" duration="6792000" />
+      <workItem from="1591845761080" duration="219000" />
+      <workItem from="1592190924727" duration="1044000" />
+      <workItem from="1592448104959" duration="8578000" />
+      <workItem from="1593399271648" duration="2293000" />
+      <workItem from="1593500503455" duration="693000" />
+      <workItem from="1593503170242" duration="6283000" />
+      <workItem from="1593574619352" duration="10583000" />
+      <workItem from="1593653332793" duration="3605000" />
+      <workItem from="1593760426756" duration="141000" />
+      <workItem from="1594110350868" duration="1430000" />
+      <workItem from="1595474913433" duration="16236000" />
+      <workItem from="1595552841856" duration="20197000" />
+      <workItem from="1595814305490" duration="13719000" />
+      <workItem from="1595839461214" duration="5487000" />
+      <workItem from="1595898339500" duration="1578000" />
+      <workItem from="1595989238671" duration="2148000" />
+      <workItem from="1596189048301" duration="1032000" />
+      <workItem from="1596435731486" duration="7720000" />
+      <workItem from="1596454631699" duration="14000" />
+      <workItem from="1596532163690" duration="1450000" />
+      <workItem from="1596607444941" duration="3297000" />
+      <workItem from="1596621299214" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="179" key="#ESLint" timestamp="1596621308471">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#ESLint/0.0.1920.1040@0.0.1920.1040" timestamp="1596621308471" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1595572957922">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595572957922" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1588845245361">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588845245361" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596442825753">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596442825753" />
+    <state x="567" y="220" width="786" height="600" key="find.popup" timestamp="1595475319645">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="567" y="220" width="786" height="600" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595475319645" />
+  </component>
+</project>
