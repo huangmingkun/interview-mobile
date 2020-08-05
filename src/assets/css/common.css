@@ -1,0 +1,49 @@
+.margin_auto {
+  margin: auto;
+}
+._margin-20 {
+  margin: 2rem;
+}
+.margin_top20 {
+  margin-top: 20px;
+}
+.margin_left20 {
+  margin-left: 20px;
+}
+.margin_right20 {
+  margin-right: 20px;
+}
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex_start {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.text_left {
+  text-align: left;
+}
+
+.text_right {
+  text-align: right;
+}
+
+.font_size15 {
+  font-size: 15px;
+}
+.padding_tb50 {
+  padding: .5rem 0;
+}
+.text_ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

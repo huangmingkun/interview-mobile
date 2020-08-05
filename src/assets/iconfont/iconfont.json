@@ -1,0 +1,30 @@
+{
+  "id": "1668922",
+  "name": "interview-mobile",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "553323",
+      "name": "姓名 用户名 昵称",
+      "font_class": "username",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "10605731",
+      "name": "密码",
+      "font_class": "password",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "1137772",
+      "name": "返回",
+      "font_class": "fanhui",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    }
+  ]
+}

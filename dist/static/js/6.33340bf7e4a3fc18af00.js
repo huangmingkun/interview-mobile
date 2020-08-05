@@ -1,0 +1,2 @@
+webpackJsonp([6],{MKGA:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i={render:function(){this.$createElement;this._self._c;return this._m(0)},staticRenderFns:[function(){var e=this.$createElement,t=this._self._c||e;return t("div",[t("h1",[this._v("嵌套路由")])])}]};var r=n("VU/8")({name:"RouterChildren"},i,!1,function(e){n("boUi")},"data-v-25c4661b",null);t.default=r.exports},boUi:function(e,t){}});
+//# sourceMappingURL=6.33340bf7e4a3fc18af00.js.map
