@@ -60,6 +60,11 @@ const routesStatic = [
     component: () => import('@/views/test/date-time/DateTime')
   },
   {
+    path: '/clipboard',
+    name: 'Clipboard',
+    component: () => import('@/views/test/clipboard/Clipboard')
+  },
+  {
     path: '/slot',
     name: 'Slot',
     component: () => import('@/views/test/Slot')
