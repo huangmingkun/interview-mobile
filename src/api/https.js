@@ -2,8 +2,9 @@ import axios from 'axios'
 import router from '../router/index'
 // import Nprogress from 'nprogress' // 引入Nprogress进度条
 // var qs = require('qs');
-axios.defaults.timeout = 5000
-axios.defaults.baseURL = 'http://127.0.0.1:2020' // node+express服务器地址
+axios.defaults.timeout = 10000
+// axios.defaults.baseURL = 'http://127.0.0.1:2020' // node+express服务器地址
+axios.defaults.baseURL = 'http://localhost:8090' // 本地java服务器地址
 // http request 拦截器
 axios.interceptors.request.use(
   config => {

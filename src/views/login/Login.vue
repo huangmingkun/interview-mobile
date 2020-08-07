@@ -59,7 +59,7 @@ export default {
     loginClick () {
       let that = this
       if (that.userName === '' || that.password === '') {
-        that.$toast('账号或密码错误！')
+        that.$toast('账号或密码错误')
       } else {
         that.$router.push({
           path: '/home'
