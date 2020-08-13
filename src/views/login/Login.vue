@@ -30,6 +30,7 @@
 
 <script>
 import LoginField from '../my-components/LoginField'
+import { requestLogin } from '../../api/index'
 export default {
   name: 'Login',
   data () {
@@ -58,14 +59,17 @@ export default {
   methods: {
     loginClick () {
       let that = this
-      if (that.userName === '' || that.password === '') {
-        that.$toast('账号或密码错误')
-      } else {
-        that.$router.push({
-          path: '/home'
-        })
-      }
-      console.log('登录')
+      requestLogin({}).then((res) => {
+        console.log('6666666666666', res)
+        // that.$router.push({
+        //   path: '/home'
+        // })
+      })
+      // if (that.userName === '' || that.password === '') {
+      //   that.$toast('账号或密码错误')
+      // } else {
+      // }
+      // console.log('登录')
     }
   }
 }

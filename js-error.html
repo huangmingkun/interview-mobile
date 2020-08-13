@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <!--js加载失败的方法需要提前定义-->
+  <script>
+    function jsLoadErr (e, s) {
+      console.log(e, s)
+      // debugger
+      alert('js加载失败了')
+      const new_s = document.createElement('script');
+      new_s.setAttribute('type', 'text/javascript');
+      new_s.setAttribute('src', s);
+      const head = document.getElementsByTagName('head')[0];
+      head.appendChild(new_s);
+      // let new_s = document.createElement('script');
+      // new_s.src = s;
+      // new_s.type = 'test/javaScript';
+      // document.head.insertBefore(new_s, e);
+      // 移除在线加载失败的script
+      e.remove();
+    }
+  </script>
+  <!--https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js-->
+  <!--cdn加载js失败时候，onerror方法将自动加载静态资源-->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2/clipboard.min.js"
+    onerror="jsLoadErr(this, 'static/pulugins/clipboard/clipboard.min.js')">
+  </script>
+</head>
+<body>
+  <h1 class="test">js容灾</h1>
+  <script>
+    window.onload = function () {
+      var clipboard = new ClipboardJS('.test')
+      console.log('剪贴板', clipboard)
+    }
+  </script>
+</body>
+</html>

@@ -37,7 +37,7 @@ const routesStatic = [
   {
     path: '/debounceOrThrottle',
     name: 'DebounceOrThrottle',
-    component: () => import('@/views/test/DebounceOrThrottle')
+    component: () => import('@/views/test/debounce-throttle/DebounceOrThrottle')
   },
   {
     path: '/ulList',
@@ -65,9 +65,19 @@ const routesStatic = [
     component: () => import('@/views/test/clipboard/Clipboard')
   },
   {
+    path: '/prop',
+    name: 'Prop',
+    component: () => import('@/views/test/prop/Prop')
+  },
+  {
+    path: '/encryption',
+    name: 'encryption',
+    component: () => import('@/views/test/encryption/Encryption')
+  },
+  {
     path: '/slot',
     name: 'Slot',
-    component: () => import('@/views/test/Slot')
+    component: () => import('@/views/test/slot/Slot')
   }
 ]
 

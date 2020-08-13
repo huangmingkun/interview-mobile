@@ -18,7 +18,7 @@ export default {
       // 设置私钥
       decrypt.setPrivateKey('-----BEGIN RSA PRIVATE KEY-----' + privateKey + '-----END RSA PRIVATE KEY-----')
       // 解密数据
-      decrypt.decrypt(data)
+      return decrypt.decrypt(data)
     }
   }
 }
