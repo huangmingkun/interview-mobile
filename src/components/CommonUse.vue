@@ -23,8 +23,6 @@
 
 <script>
 import watchGoBack from '@/js/mixins/watchGoBackForQrCode'
-import encryptionRSA from '@/js/mixins/encryption-rsa'
-import encryptionMd5 from '@/js/mixins/encryption-md5'
 // 在单独构建的版本中辅助函数为 Vuex.mapState、Vuex.mapGetters、Vuex.mutations、Vuex.mapActions
 import { mapState, mapGetters, mapMutations, mapActions } from 'vuex'
 export default {
@@ -37,7 +35,7 @@ export default {
       idName: 'shenhua'
     }
   },
-  mixins: [watchGoBack, encryptionRSA, encryptionMd5],
+  mixins: [ watchGoBack ],
   filters: {
     // {{}}过滤器
     addNumber (value, param) {
@@ -99,21 +97,6 @@ export default {
     // console.log('访问根属性data', that.$data)
     // 测试数组赋值问题
     // that.getArryTest()
-    /**
-     * 数据加密解密
-     * **/
-      // 公钥
-    var PUBLIC_KEY = 'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDtIIgjyT95EpqL/KJ4j+thYR8wYVcW955Pv0bTVgioVJ3G+CYIXUDHcMT+vIaJ/tED/ZvE6XWY7Iv94VQvkzyL+n4Z1hUEmqbqgvREUSDtzMG0k8sl4qNHXQ57X4E03kBIs++6sPQE4oadGO+WV6SILbyT+UTouflNvMh8Qyn/kQIDAQAB'
-    // 私钥
-    var PRIVATE_KEY = 'MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAO0giCPJP3kSmov8oniP62FhHzBhVxb3nk+/RtNWCKhUncb4JghdQMdwxP68hon+0QP9m8TpdZjsi/3hVC+TPIv6fhnWFQSapuqC9ERRIO3MwbSTyyXio0ddDntfgTTeQEiz77qw9ATihp0Y75ZXpIgtvJP5ROi5+U28yHxDKf+RAgMBAAECgYA1XIjGZNdfy4vzzJpTPy/c7hoyrPUIOhjqIUUy8b1pBAGtcNI+N54IQ5xRJuOv0iP/Hecb3N2V2EV4kGh9fEi3WHaYqW6ZHUeFDP8HeRieZ3IRyPq9lyk6KEzfLPxfxn4TuGUyIaDGOnC31UTj2ZelzkW7A86pjXQuhfj2JWhTAQJBAPhL9HXrxm6pjGOqUoJmyLChsOxPF5QyydKKW/Y+gUGb/7krziejret+BgrzXxVGkP01FUXTjnvNwXAyqpg731kCQQD0e91NtGmAD+9v1HSeDYr3mFIPjkWuWNw4q9j5RdAZYYV7en1BZmwEUEZog3PDCQ8uG29ClbY9YFFQIqCbVZL5AkBeiMyyeOo8B+GjsJ1peKjAV099KT/Y9N1Sg8svneyohjR+0+bRwMfe+URjtvVkrFFXlnZa94kwKc6UYTYCcAlBAkBUOQuPBlTF4jd5DfaysDWsgBPc+gU1P7V17HWNwigjZj4mwJa/3fneLo1i2c4aZVeOabMVfB/Q2wqIEbXEbWF5AkEA6SOl85LyGZln2WRFm5kOlWsrjvD5Jkvwo7VoYE0vs9GFMqhND16ACeKXi1LHDr3r3Ak/FB+hXQIdIbitRvynrA=='
-    // 加密
-    let encryptName = that.mixinEncryptedData(PUBLIC_KEY, 'data')
-    // console.log('encryptName', encryptName)
-    // 解密
-    let decryptName = that.mixinDecryptData(PRIVATE_KEY, encryptName)
-    console.log('decryptName', decryptName)
-    // md5加密
-    // console.log('md5加密--拼接无意义字符串防止破解', that.mixinEncryptedDataMd5('name'))
   },
   methods: {
     // node+express接口获取的数组赋值测试

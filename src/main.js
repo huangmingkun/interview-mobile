@@ -18,6 +18,16 @@ import './assets/css/common.css'
 // 引入全局filter方法
 import filters from './js/common/utils'
 import Lodash from 'lodash' // lodash--js函数
+import Mock from './mock/mock'
+// 根据环境变量决定是否引入mock
+if (process.env.NODE_ENV === 'development') {
+  console.log('process.env.NODE_ENV', process.env.API)
+  Mock.mockData()
+}
+// 引入mock
+// import Mock from './mock/mock'
+// Mock.mockData()
+
 // import { focus } from './js/directive/directives'// 全局引入指令
 Vue.prototype.$log = window.console.log // 全局引入打印调试
 Vue.prototype.$lodash = Lodash // lodash--js函数
