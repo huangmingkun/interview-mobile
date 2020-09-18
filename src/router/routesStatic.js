@@ -75,6 +75,41 @@ const routesStatic = [
     component: () => import('@/views/test/encryption/Encryption')
   },
   {
+    path: '/array',
+    name: 'array',
+    component: () => import('@/views/test/array/Array')
+  },
+  {
+    path: '/jstest',
+    name: 'JsTest',
+    component: () => import('@/views/test/js-test/JsTest')
+  },
+  {
+    path: '/range',
+    name: 'Range',
+    component: () => import('@/views/test/range/Range')
+  },
+  {
+    path: '/grid',
+    name: 'Grid',
+    component: () => import('@/views/test/grid/Grid')
+  },
+  {
+    path: '/css',
+    name: 'CssTest',
+    component: () => import('@/views/test/css-test/CssTest')
+  },
+  {
+    path: '/hoverText',
+    name: 'hoverText',
+    component: () => import('@/views/test/css-test/HoverText')
+  },
+  {
+    path: '/triangle',
+    name: 'Triangle',
+    component: () => import('@/views/test/css-test/Triangle')
+  },
+  {
     path: '/slot',
     name: 'Slot',
     component: () => import('@/views/test/slot/Slot')

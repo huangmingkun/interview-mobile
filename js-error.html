@@ -12,8 +12,10 @@
       const new_s = document.createElement('script');
       new_s.setAttribute('type', 'text/javascript');
       new_s.setAttribute('src', s);
+      console.log(7777777, document.getElementsByTagName('head'))
       const head = document.getElementsByTagName('head')[0];
       head.appendChild(new_s);
+      console.log(8888888, document.getElementsByTagName('head'))
       // let new_s = document.createElement('script');
       // new_s.src = s;
       // new_s.type = 'test/javaScript';

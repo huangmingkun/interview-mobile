@@ -2,19 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5d09c59-5307-471b-982f-68da340d51aa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/my-components/MyRange.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/test/array/Array.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/test/css-test/CssTest.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/test/css-test/HoverText.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/test/css-test/Triangle.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/test/grid/Grid.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/test/js-test/JsTest.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/test/range/Range.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-error.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/routesStatic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/routesStatic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/test/debounce-throttle/DebounceOrThrottle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/test/debounce-throttle/DebounceOrThrottle.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/test/encryption/Encryption.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/test/encryption/Encryption.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="EditorConfigPreviewManager">
+    <editorConfig file="$PROJECT_DIR$/.editorconfig" previewFile="$PROJECT_DIR$/src/views/test/css-test/CssTest.vue" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Markdown" />
         <option value="Vue Single File Component" />
       </list>
     </option>
@@ -29,15 +47,17 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="js.linters.configure.manually.selectedeslint" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/api" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
     <property name="node.js.selected.package.standard" value="$PROJECT_DIR$/../../interview-mobile/node_modules/eslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -48,14 +68,16 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\src\views\test\debounce-throttle" />
+      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\src\views\test\slot" />
       <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\src\views\test" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\src\api" />
+      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\static\pulugins\clipboard" />
+      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\static\pulugins" />
       <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\src\assets\iconfont" />
       <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\src\views\my-components" />
-      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\src\router" />
-      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\src\assets\img\test" />
-      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\src\js\alloyFinger" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -146,32 +168,102 @@
       <workItem from="1596532163690" duration="1450000" />
       <workItem from="1596607444941" duration="3297000" />
       <workItem from="1596621299214" duration="10000" />
+      <workItem from="1596677484684" duration="1333000" />
+      <workItem from="1596680749574" duration="1534000" />
+      <workItem from="1596695183932" duration="611000" />
+      <workItem from="1596701547064" duration="11881000" />
+      <workItem from="1596786458746" duration="1902000" />
+      <workItem from="1597021614561" duration="12081000" />
+      <workItem from="1597112606486" duration="13968000" />
+      <workItem from="1597280695029" duration="4106000" />
+      <workItem from="1597290778585" duration="15051000" />
+      <workItem from="1597821225920" duration="22813000" />
+      <workItem from="1598413998573" duration="3288000" />
+      <workItem from="1598518003343" duration="5440000" />
+      <workItem from="1598604205147" duration="3399000" />
+      <workItem from="1598836270250" duration="1230000" />
+      <workItem from="1598862529885" duration="924000" />
+      <workItem from="1599621405672" duration="12968000" />
+      <workItem from="1600045598478" duration="599000" />
+      <workItem from="1600157280679" duration="5000" />
+      <workItem from="1600157294629" duration="1388000" />
+      <workItem from="1600223500276" duration="19000" />
+      <workItem from="1600242172818" duration="6813000" />
+      <workItem from="1600408145890" duration="758000" />
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1596681554004</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596681554004</updated>
+    </task>
+    <task id="LOCAL-00002" summary="新增clipboard">
+      <created>1596766950823</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596766950823</updated>
+    </task>
+    <task id="LOCAL-00003" summary="新增功能">
+      <created>1597286371315</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597286371315</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <MESSAGE value="新增clipboard" />
+    <MESSAGE value="新增功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增功能" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="179" key="#ESLint" timestamp="1596621308471">
+    <state x="552" y="179" key="#ESLint" timestamp="1596677523191">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="179" key="#ESLint/0.0.1920.1040@0.0.1920.1040" timestamp="1596621308471" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1595572957922">
+    <state x="552" y="179" key="#ESLint/0.0.1920.1040@0.0.1920.1040" timestamp="1596677523191" />
+    <state x="162" y="111" width="1341" height="818" key="CommitChangelistDialog2" timestamp="1597286370582">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595572957922" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1588845245361">
+    <state x="162" y="111" width="1341" height="818" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597286370582" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1597199150579">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588845245361" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597199150579" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1597042514990">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597042514990" />
+    <state x="684" y="231" key="RollbackChangesDialog" timestamp="1597285555505">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="684" y="231" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597285555505" />
+    <state x="354" y="253" width="1014" height="533" key="Vcs.Push.Dialog.v2" timestamp="1597286401600">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="354" y="253" width="1014" height="533" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597286401600" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596442825753">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596442825753" />
-    <state x="567" y="220" width="786" height="600" key="find.popup" timestamp="1595475319645">
+    <state x="567" y="220" width="786" height="600" key="find.popup" timestamp="1596765287563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="567" y="220" width="786" height="600" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595475319645" />
+    <state x="567" y="220" width="786" height="600" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596765287563" />
+    <state x="629" y="311" key="git4idea.merge.GitPullDialog" timestamp="1597286380571">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="629" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597286380571" />
+    <state x="616" y="173" width="670" height="676" key="search.everywhere.popup" timestamp="1599622984125">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="173" width="670" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599622984125" />
   </component>
 </project>

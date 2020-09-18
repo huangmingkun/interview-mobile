@@ -11,6 +11,8 @@ export default {
   name: 'Encryption',
   mixins: [ encryptionRsa, encryptionMd5 ],
   mounted () {
+    console.log('指向组件的实例', this)
+    console.log('指向当前组件的DOM元素', this.$el)
     const that = this
     // rsa加密解密
     that.rsaEncryption()
