@@ -27,6 +27,7 @@ export default {
       border-bottom: 200px solid goldenrod;
       border-left: 100px solid #1c00cf08;
       border-right: 100px solid #1155cc0a;
+      border-top: 100px solid #1155cc0a;
     }
   }
   .container1 {

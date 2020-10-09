@@ -110,6 +110,11 @@ const routesStatic = [
     component: () => import('@/views/test/css-test/Triangle')
   },
   {
+    path: '/shanGeHua',
+    name: 'ShanGeHua',
+    component: () => import('@/views/test/css-test/ShanGeHua')
+  },
+  {
     path: '/slot',
     name: 'Slot',
     component: () => import('@/views/test/slot/Slot')

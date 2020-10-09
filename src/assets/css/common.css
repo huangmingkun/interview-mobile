@@ -1,3 +1,9 @@
+.display_flex_start_wrap {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .margin_auto {
   margin: auto;
 }
@@ -39,6 +45,9 @@
 .font_size15 {
   font-size: 15px;
 }
+.font_size20 {
+  font-size: 20px;
+}
 .padding_tb50 {
   padding: .5rem 0;
 }
@@ -46,4 +55,8 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.color_white {
+  color: white;
 }
