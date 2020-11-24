@@ -62,7 +62,7 @@ export default {
     if (answer) {
       next()
     } else {
-      next(false)
+      // next(false)
     }
   }
 }

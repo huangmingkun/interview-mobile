@@ -16,13 +16,13 @@ export default {
   name: 'App',
   components: {MenuList},
   created: function () {
-    // 在页面加载时读取sessionStorage里的状态信息
-    sessionStorage.getItem('interviewMsg') && this.$store.replaceState(Object.assign({}, JSON.parse(sessionStorage.getItem('interviewMsg'))))
-    sessionStorage.removeItem('interviewMsg')
-    // 在页面刷新时将vuex里的信息保存到sessionStorage里
-    window.addEventListener('beforeunload', () => {
-      sessionStorage.setItem('interviewMsg', JSON.stringify(this.$store.state))
-    })
+    // // 在页面加载时读取sessionStorage里的状态信息
+    // sessionStorage.getItem('interviewMsg') && this.$store.replaceState(Object.assign({}, JSON.parse(sessionStorage.getItem('interviewMsg'))))
+    // sessionStorage.removeItem('interviewMsg')
+    // // 在页面刷新时将vuex里的信息保存到sessionStorage里
+    // window.addEventListener('beforeunload', () => {
+    //   sessionStorage.setItem('interviewMsg', JSON.stringify(this.$store.state))
+    // })
   }
 }
 </script>
@@ -32,7 +32,7 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /*text-align: center;*/
   color: #2c3e50;
   margin: 0;
   padding: 0;

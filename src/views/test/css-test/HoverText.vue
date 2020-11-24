@@ -1,7 +1,10 @@
 <template>
-    <div style="position: relative;margin-left: 100px" class="text_left">
+    <div style="position: relative;margin-left: 100px"
+         @mouseenter="isCycleShow=true"
+         @mouseleave="isCycleShow=false"
+         class="text_left">
       悬浮指示框练习
-      <div ng-show="isCycleShow" class="cycle-hover">
+      <div v-show="isCycleShow" class="cycle-hover">
         <i class="solid-triangle"></i>
         <i class="hollow-triangle"></i>
         <p>会议周期：2020-08-18 ~ 2020-9-18</p>
@@ -14,6 +17,11 @@
 <script>
 export default {
   name: 'HoverText',
+  data () {
+    return {
+      isCycleShow: false
+    }
+  },
   created () {
   }
 }
@@ -29,7 +37,7 @@ export default {
     padding: 10px;
     border: 1px solid #d6cfcfee;
     border-radius: 10px;
-    z-index: 2;
+    z-index: 9999;
     .margin-left-70 {
       margin-left: 70px;
     }

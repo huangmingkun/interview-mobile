@@ -1,7 +1,7 @@
 <template>
   <div class="login-container flex_center">
     <div class="login-main">
-      <p class="login-title">
+      <p class="login-title text_center">
         登录
       </p>
      <!-- <mt-field label="用户名" v-model="userName1"></mt-field>-->
@@ -52,13 +52,12 @@ export default {
     }
   },
   components: { LoginField },
-  mounted () {
-  },
   created () {
+  },
+  mounted () {
   },
   methods: {
     loginClick () {
-      let that = this
       requestLogin({}).then((res) => {
         console.log('6666666666666', res)
         // that.$router.push({

@@ -7,7 +7,7 @@ import whiteList from './whiteList' // 路由白名单
 Vue.use(Router)
 // 进度条参数配置
 Nprogress.configure({ easing: 'ease', speed: 500, showSpinner: false })
-console.log('routesStatic', routesStatic)
+console.log('routesStatic1111', routesStatic)
 console.log('whiteList', whiteList)
 const router = new Router({
   // 1.路由模式mode，history模式url无“#”，hash模式url有“#”;

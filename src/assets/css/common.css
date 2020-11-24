@@ -51,6 +51,9 @@
 .padding_tb50 {
   padding: .5rem 0;
 }
+.padding_input {
+  padding: 6px;
+}
 .text_ellipsis {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -59,4 +62,11 @@
 
 .color_white {
   color: white;
+}
+.color_blue {
+  color: #1b75a3;
+}
+
+.border_blue_1px {
+  border: 1px solid #1b75a3;
 }

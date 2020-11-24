@@ -4,7 +4,7 @@ Vue.use(Vuex)
 
 const state = {
   count: 123,
-  loginData: {name: 'hmk', password: '12345'},
+  loginData: {name: 'hmk', password: '12345', sex: 'm'},
   todos: [
     { id: 1, text: '...', done: true },
     { id: 2, text: '...', done: false }
@@ -26,6 +26,11 @@ const getters = {
 const mutations = {
   increment (state, payload) {
     state.count += payload.amount
+  },
+  addLoginDataMsg (state, payload) {
+    console.log('payload', payload)
+    state.loginData = {...state.loginData, ...payload}
+    console.log('loginData', state.loginData)
   }
 }
 

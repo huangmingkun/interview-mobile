@@ -22,6 +22,8 @@
       type="dateTime"
       cancelText="取消"
       confirmText="确定"
+      :startDate="initStartDate"
+      :endDate="initEndDate"
       :closeOnClickModal="true"
       :visibleItemCount="7"
       v-model="pickerDateTimeValue">
@@ -32,6 +34,9 @@
       cancelText="取消"
       confirmText="确定"
       :closeOnClickModal="true"
+      year-format="{value} 年"
+      month-format="{value} 月"
+      date-format="{value} 日"
       :visibleItemCount="7"
       v-model="pickerDateValue">
     </mt-datetime-picker>
@@ -55,7 +60,8 @@ export default {
       pickerDateTimeValue: new Date(),
       pickerDateValue: new Date(),
       pickerTimeValue: '12:30',
-      startDate: new Date(),
+      initStartDate: new Date(new Date().setFullYear(new Date().getFullYear() - 2)),
+      initEndDate: new Date(new Date().setFullYear(new Date().getFullYear() + 2)),
       slots: [
         {
           flex: 1,

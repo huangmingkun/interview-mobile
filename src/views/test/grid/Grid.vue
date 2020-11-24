@@ -60,9 +60,9 @@ export default {
       /*grid-area属性指定项目放在哪一个区域*/
       /*配合grid-template-areas使用*/
       grid-area: e;
-      /*属性设置单元格内容的水平位置（左中右），跟justify-items属性的用法完全一致，但只作用于单个项目*/
+      /*属性设置单元格内容的水平位置（左中右），可选值start | end | center | stretch，但只作用于单个项目*/
       justify-self: center;
-      /*属性设置单元格内容的垂直位置（上中下），跟align-items属性的用法完全一致，也是只作用于单个项目*/
+      /*属性设置单元格内容的垂直位置（上中下），可选值start | end | center | stretch，也是只作用于单个项目*/
       align-self: center;
       /*规定单个项目列占据的位置*/
       /*方法一*/

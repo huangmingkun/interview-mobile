@@ -54,12 +54,10 @@ export default {
     // beforeRouteEnter 守卫 不能 访问 this，因为守卫在导航确认前被调用，因此即将登场的新组件还没被创建。
     // 不过，你可以通过传一个回调给 next来访问组件实例。在导航被确认的时候执行回调，并且把组件实例作为回调方法的参数。
     console.log('步骤' + 55555555)
-    setTimeout(function () {
-      next(vm => {
-        console.log('步骤' + 88888888)
-        // 通过 `vm` 访问组件实例
-      })
-    }, 100)
+    next(vm => {
+      console.log('步骤' + 88888888)
+      // 通过 `vm` 访问组件实例
+    })
   },
   beforeRouteLeave (to, from, next) {
     // 导航离开该组件的对应路由时调用

@@ -80,9 +80,24 @@ const routesStatic = [
     component: () => import('@/views/test/array/Array')
   },
   {
-    path: '/jstest',
+    path: '/uniqueArray',
+    name: 'UniqueArray',
+    component: () => import('@/views/test/array/UniqueArray')
+  },
+  {
+    path: '/MemoryFunc',
+    name: 'MemoryFunc',
+    component: () => import('@/views/test/js-test/MemoryFunc')
+  },
+  {
+    path: '/JsTest',
     name: 'JsTest',
     component: () => import('@/views/test/js-test/JsTest')
+  },
+  {
+    path: '/getUrlDomain',
+    name: 'GetUrlDomain',
+    component: () => import('@/views/test/js-test/GetUrlDomain')
   },
   {
     path: '/range',
@@ -113,6 +128,41 @@ const routesStatic = [
     path: '/shanGeHua',
     name: 'ShanGeHua',
     component: () => import('@/views/test/css-test/ShanGeHua')
+  },
+  {
+    path: '/jieGou',
+    name: 'Es6JieGou',
+    component: () => import('@/views/test/js-test/Es6JieGou')
+  },
+  {
+    path: '/vuex',
+    name: 'Vuex',
+    component: () => import('@/views/test/vuex/Vuex')
+  },
+  {
+    path: '/eventLoop',
+    name: 'EventLoop',
+    component: () => import('@/views/test/js-test/EventLoop')
+  },
+  {
+    path: '/designDecorate',
+    name: 'DesignDecorate',
+    component: () => import('@/views/test/js-test/DesignDecorate')
+  },
+  {
+    path: '/regularExp',
+    name: 'RegularExp',
+    component: () => import('@/views/test/js-test/RegularExp')
+  },
+  {
+    path: '/computedTest',
+    name: 'ComputedTest',
+    component: () => import('@/views/test/js-test/ComputedTest')
+  },
+  {
+    path: '/shortId',
+    name: 'ShortId',
+    component: () => import('@/views/test/js-test/ShortId')
   },
   {
     path: '/slot',

@@ -63,5 +63,6 @@ export default {
   z-index: 999;
   bottom: 20px;
   right: 50px;
+  text-align: center;
 }
 </style>
