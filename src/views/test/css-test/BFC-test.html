@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    width: 100%;
+    position: relative;
+  }
+
+  .left {
+    width: 100px;
+    height: 150px;
+    float: left;
+    background: rgb(139, 214, 78);
+    text-align: center;
+    line-height: 150px;
+    font-size: 20px;
+  }
+
+  .right {
+    overflow: hidden;
+    height: 300px;
+    background: rgb(170, 54, 236);
+    text-align: center;
+    line-height: 300px;
+    font-size: 40px;
+  }
+
+  .par {
+    border: 5px solid rgb(91, 243, 30);
+    /*width: 300px;*/
+    overflow: hidden;
+  }
+
+  .child {
+    border: 5px solid rgb(233, 250, 84);
+    width:100px;
+    height: 100px;
+    float: left;
+    margin: 6px;
+  }
+  .child:nth-child(1) {
+    margin: 6px 0;
+  }
+</style>
+<body>
+<div style="margin: 20px 20px 100px 20px">
+  <p style="font-size: 20px;font-weight: bold">如何创建BFC</p>
+  <a href="https://blog.csdn.net/sinat_36422236/article/details/88763187">相关链接</a>
+  <ul>
+    <li>1、float的值不是none。</li>
+    <li>2、position的值不是static或者relative。</li>
+    <li>3、display的值是inline-block、table-cell、flex、table-caption或者inline-flex</li>
+    <li>4、overflow的值不是visible</li>
+  </ul>
+</div>
+<!--BFC（右布局增加overflow: hidden）创建的自适应两列布局-->
+<div class="left">LEFT</div>
+<div class="right">RIGHT</div>
+<!--BFC（父元素增加overflow: hidden）解决父元素不设置高度时，父子元素左侧重叠的问题-->
+<div style="margin-top: 50px" class="par">
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+</div>
+</body>
+</html>

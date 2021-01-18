@@ -7,12 +7,15 @@
 <!--              :state="stateType"-->
 <!--              @keydown.native="clickMethod">-->
 <!--    </mt-field>-->
-    <input v-model="inputValue" @keypress="clickMethod">
+    <input
+      v-model="inputValue"
+      oninput="value=value.replace(/[\'&]/, '')"
+      @keypress="clickMethod">
    <!-- <mt-button @click="clickMethod">点击</mt-button>-->
     <p class="padding_tb50"
        v-for="(index) in 100"
        :key="index">
-      hello + {{index}}</p>
+      hello + {{inputValue}}</p>
   </div>
 </template>
 
@@ -45,7 +48,7 @@ export default {
         }, time)
       }
     },
-    // 抖动和节流
+    // 自定义方法实现抖动和节流
     throttling (fn, time, maxTimeLong) {
       let timeout = null
       let startTime = Date.parse(new Date())
@@ -69,7 +72,7 @@ export default {
     }
   },
   created () {
-    this.clickMethod = debounce(this.clickMethod, 500)
+    // this.clickMethod = debounce(this.clickMethod, 500)
   },
   mounted () {
     let that = this
@@ -78,9 +81,9 @@ export default {
      * 节流
      * **/
     // 闭包方式优化滚动事件---滚动完成再触发事件
-    // window.addEventListener('scroll', that.debounce(that.handle, 500))
+    // window.addEventListener('scroll', that.debounce(that.handle, 2000))
     // 节流+防抖动优化滚动事件
-    // window.addEventListener('scroll', that.throttling(that.handle, 500, 1000))
+    window.addEventListener('scroll', that.throttling(that.handle, 500, 1000))
   }
 }
 </script>

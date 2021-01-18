@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  JSEncrypt.prototype.encryptLong = function (string) {
+    var k = this.getKey();
+    var strings = base64.encode(string);
+    var encrypArray = new Array();
+    try {
+      var ct = "";
+      if (strings.length > 245) {
+        for (var i = 0; i < strings.length; i = i + 245) {
+          var str;
+          if (strings.length >= (i + 245)) {
+            str = strings.substring(i, i + 245);
+          } else {
+            str = strings.substring(i);
+          }
+          var t1 = k.encrypt(str);
+          encrypArray.push(hex2b64(t1));
+        }
+        return encrypArray;
+      }
+      var t = k.encrypt(strings);
+      encrypArray.push(hex2b64(t));
+      return encrypArray;
+    } catch (ex) {
+      return false;
+    }
+  };
+  JSEncrypt.prototype.decryptLong = function (encrypArray) {
+    var key = this.getKey();
+    try {
+      var t3 = "";
+      for(var j=0; j < encrypArray.length; j++){
+        var t4 = key.decrypt(b64tohex(encrypArray[j]));
+        t3 += t4;
+      }
+      var strings = String(base64.decode(t3));
+      return t3;
+    } catch (ex) {
+      return false;
+    }
+  };
+
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .layout-container {
+      /*display: flex;*/
+      /*justify-content: center;*/
+    }
+    .left-menu {
+      width: 300px;
+      height: 600px;
+      float: left;
+      background-color: red;
+    }
+    .left-container {
+      margin-left: 100px;
+      float: left;
+      width: 1318px
+    }
+    .main-content {
+       width: 600px
+     }
+    .main-content {
+      float: right;
+      height: 600px;
+      background-color: #26a2ff;
+    }
+    .right-menu {
+      /*float: left;*/
+      overflow: hidden;
+      height: 700px;
+      background-color: #63a35c;
+      margin-left: 10px;
+      align-items: stretch !important;
+    }
+    .right-content {
+      float: left;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <div class="layout-container">
+    <div class="left-container">
+      <div class="left-menu"></div>
+      <div class="main-content"></div>
+    </div>
+    <div class="right-menu">
+      <div class="right-content"></div>
+    </div>
+  </div>
+</body>
+</html>

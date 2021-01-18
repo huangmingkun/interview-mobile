@@ -95,6 +95,11 @@ const routesStatic = [
     component: () => import('@/views/test/js-test/JsTest')
   },
   {
+    path: '/VueRender',
+    name: 'VueRender',
+    component: () => import('@/views/test/js-test/VueRender')
+  },
+  {
     path: '/getUrlDomain',
     name: 'GetUrlDomain',
     component: () => import('@/views/test/js-test/GetUrlDomain')
@@ -163,6 +168,16 @@ const routesStatic = [
     path: '/shortId',
     name: 'ShortId',
     component: () => import('@/views/test/js-test/ShortId')
+  },
+  {
+    path: '/directive',
+    name: 'Directive',
+    component: () => import('@/views/test/directive/Directive')
+  },
+  {
+    path: '/ScrollTest',
+    name: 'ScrollTest',
+    component: () => import('@/views/test/mint-ui/ScrollTest')
   },
   {
     path: '/slot',

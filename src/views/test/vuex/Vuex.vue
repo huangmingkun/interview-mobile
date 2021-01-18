@@ -34,6 +34,24 @@ export default {
     //   age: 18
     // }
     // that.addLoginDataMsg(sex)
+    /**
+     * -------vuex
+     * **/
+    // --------------------------vuex---state
+    // console.log('vuex--loginData', that.vuexLoginData)
+    // --------------------------vuex---getters
+    // console.log('vuex-getters', that.doneTodo)
+    // console.log('vuex-getters-params', that.doneTodosCount)
+    // 注意，getter 在通过方法访问时，每次都会去进行调用，而不会缓存结果。
+    // console.log('vuex-getters-queryByParams', that.queryById(1))
+    // --------------------------vuex--mutations--mapMutations
+    // that.vuexIncrement({
+    //   amount: 11
+    // })
+    // console.log('after mutations---vuexCount', that.vuexCount)
+    // --------------------------vuex--mutations--mapActions
+    that.vuexActionIncrement()
+    // console.log('after actions---vuexCount', that.vuexCount)
   },
   methods: {
     ...mapMutations({

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.bootcss.com/lodash.js/4.17.11/lodash.js"></script>
+  <title>图片懒加载</title>
+  <style>
+    img {
+      display: block;
+      width: 400px;
+      height: 300px;
+      margin-bottom: 200px;
+    }
+  </style>
+</head>
+<body>
+<img data-src="../../../assets/logo.png" alt="">
+<img data-src="../../../assets/logo.png" alt="">
+<img data-src="../../../assets/logo.png" alt="">
+<img data-src="../../../assets/logo.png" alt="">
+</body>
+<script>
+  var imgs = document.querySelectorAll('img');
+  var debounceLazyLoad = null;
+  //offsetTop是元素与offsetParent的距离，循环获取直到页面顶部
+  function getTop(e) {
+    // console.log('e', e)
+    var T = e.offsetTop;
+    // console.log('T', T)
+    // console.log('e.offsetParent', e.offsetParent)
+    while(e = e.offsetParent) {
+      T += e.offsetTop;
+    }
+    return T;
+  }
+  function lazyLoad(imgs) {
+    var H = document.documentElement.clientHeight; // 获取可视区域高度
+    var S = document.documentElement.scrollTop || document.body.scrollTop;
+    // console.log('获取可视区域高度', H)
+    // console.log('滚动高度', S)
+    // console.log('H+S', H + S)
+    for (var i = 0; i < imgs.length; i++) {
+      if (H + S > getTop(imgs[i])) {
+        console.log('触发加载')
+        imgs[i].src = imgs[i].getAttribute('data-src');
+      }
+    }
+  }
+  window.onload = function () {
+    // 防抖 + 节流------滚动条连续滚动时，每隔一秒触发一次函数
+    debounceLazyLoad = _.debounce(lazyLoad, 500, { 'maxWait': 1000 })
+    // console.log('debounceLazyLoad', debounceLazyLoad)
+    debounceLazyLoad(imgs);
+  }
+  window.onscroll = function () { //onscroll()在滚动条滚动的时候触发
+    // console.log('imgs', imgs)
+    debounceLazyLoad(imgs);
+  }
+</script>
+</html>

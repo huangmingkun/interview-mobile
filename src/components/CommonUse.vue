@@ -8,8 +8,6 @@
       <!--filterA 被定义为接收三个参数的过滤器函数。
       其中 message 的值作为第一个参数(默认传一个参数)，普通字符串 'arg1' 作为第二个参数，表达式 arg2 的值作为第三个参数。-->
       <mt-field :id="idName | idFilter">{{equipmentName | addNumber(99) | idFilter}}</mt-field>
-      <!--v-focus--全局注册的指令，用于input的聚焦-->
-      <!--<mt-field v-focus>globalFocus</mt-field>-->
       <!--v-local-focus--局部注册的指令，用于input的聚焦-->
       <mt-field v-local-focus>localFocus</mt-field>
       <!--全局注册过滤器-->

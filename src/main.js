@@ -18,6 +18,7 @@ import './assets/css/common.css'
 // 引入全局filter方法
 import filters from './js/common/utils'
 import Lodash from 'lodash' // lodash--js函数
+import './js/directive/directives'// 全局引入指令
 import Mock from './mock/mock'
 // 根据环境变量决定是否引入mock
 if (process.env.NODE_ENV === 'development') {
@@ -28,11 +29,9 @@ if (process.env.NODE_ENV === 'development') {
 // import Mock from './mock/mock'
 // Mock.mockData()
 
-// import { focus } from './js/directive/directives'// 全局引入指令
 Vue.prototype.$log = window.console.log // 全局引入打印调试
 Vue.prototype.$lodash = Lodash // lodash--js函数
 Vue.use(MintUI)
-// Vue.use(focus) // 全局引入指令
 // 全局注册api方法
 Vue.prototype.$ApiService = ApiService
 // 局部引入---在使用的页面加上下面一行代码即可局部引入成功

@@ -12,7 +12,7 @@
       const new_s = document.createElement('script');
       new_s.setAttribute('type', 'text/javascript');
       new_s.setAttribute('src', s);
-      console.log(7777777, document.getElementsByTagName('head'))
+      console.log(7777777, document.getElementsByTagName('head')[0])
       const head = document.getElementsByTagName('head')[0];
       head.appendChild(new_s);
       console.log(8888888, document.getElementsByTagName('head'))
@@ -29,6 +29,11 @@
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2/clipboard.min.js"
     onerror="jsLoadErr(this, 'static/pulugins/clipboard/clipboard.min.js')">
+    // function escape(str) {
+    //   str = str.replace(/&/g, '&amp;')
+    //   str = str.replace(/'/g, '&#39;')
+    //   return str
+    // }
   </script>
 </head>
 <body>
