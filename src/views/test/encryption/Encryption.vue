@@ -29,6 +29,7 @@ export default {
   },
   mounted () {
     const that = this
+    console.log(3 + 4 + '1')
     // rsa加密解密
     that.rsaEncryption()
     // md5加密解密
@@ -46,6 +47,7 @@ export default {
       // 源数据限制长度为117，超过117长度的数据需要分段加密
       let tempData = null
       tempData = this.inputVal
+      // tempData = null
       // tempData = 'hmk1234567hmk1234567hmk1234567hmk1234567hmk1234567hmk1234567hmk1234567hmk1234567hmk1234567hmk1234567hmk1234567hmk1234黄'
       // tempData = ['log', 'history', 'history', 'history', 'history', 'history', 'history', 'history', 'history', 'history', 'history', 'history', 'history', 'history', 'history', 'history', 'history', 'history', 'history', 'history']
       // console.log('加密前的数据', tempData)

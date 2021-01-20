@@ -19,6 +19,7 @@ import './assets/css/common.css'
 import filters from './js/common/utils'
 import Lodash from 'lodash' // lodash--js函数
 import './js/directive/directives'// 全局引入指令
+import './js/common/common-config.js'// 全局引入相关配置
 import Mock from './mock/mock'
 // 根据环境变量决定是否引入mock
 if (process.env.NODE_ENV === 'development') {

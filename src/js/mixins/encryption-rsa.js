@@ -61,7 +61,7 @@ function subsectionEncryption (datas, encryptedArray, maxLength) {
       if (dataLength > i + maxEncryptyionLength) {
         encryptedItemData = encryptor.encrypt(datas.slice(i, i + maxEncryptyionLength))
       } else {
-        encryptedItemData = encryptor.encrypt(datas.slice(i, i + maxEncryptyionLength))
+        encryptedItemData = encryptor.encrypt(datas.slice(i))
       }
       encryptedArray.push(encryptedItemData)
     }
@@ -75,7 +75,7 @@ function subsectionEncryption (datas, encryptedArray, maxLength) {
 export function rsaEncryptedData (data, publicKey, maxLength) {
   try {
     // 加密源数据为非字符串和非数字时，需要转为字符串
-    if (typeof data !== 'string' && typeof data !== 'number') {
+    if (data && typeof data !== 'string' && typeof data !== 'number') {
       data = JSON.stringify(data)
     }
     // 验证数据不能为空；且数据长度不能太长
