@@ -54,6 +54,9 @@
 .padding_input {
   padding: 6px;
 }
+.padding_auto {
+  padding: 20px;
+}
 .text_ellipsis {
   text-overflow: ellipsis;
   overflow: hidden;

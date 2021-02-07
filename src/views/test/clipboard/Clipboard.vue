@@ -58,11 +58,10 @@ export default {
         console.error('Trigger:', e.trigger)
         clipboard.destroy()
       })
-      console.log(clipboard)
     },
     // vueClipboard插件（指令触发复制）
     onCopy (e) {
-      console.log(e)
+      // console.log(e)
       console.log('复制成功')
     },
     onError () {

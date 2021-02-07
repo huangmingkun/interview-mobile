@@ -180,6 +180,16 @@ const routesStatic = [
     component: () => import('@/views/test/mint-ui/ScrollTest')
   },
   {
+    path: '/Vuelidate',
+    name: 'Vuelidate',
+    component: () => import('@/views/test/vuelidate/VuelidateTest')
+  },
+  {
+    path: '/VueKey',
+    name: 'VueKey',
+    component: () => import('@/views/test/js-test/VueKey')
+  },
+  {
     path: '/slot',
     name: 'Slot',
     component: () => import('@/views/test/slot/Slot')

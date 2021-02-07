@@ -33,7 +33,8 @@ function isValidateDataFlag (data, type) {
       }
       if (data.length > 500) {
         console.log('需要加密的数据过长！！！')
-        return false
+        throw new TypeError('需要加密的数据过长！！！')
+        // return false
       }
       break
     case 'private':

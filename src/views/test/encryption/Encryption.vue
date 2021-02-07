@@ -29,7 +29,6 @@ export default {
   },
   mounted () {
     const that = this
-    console.log(3 + 4 + '1')
     // rsa加密解密
     that.rsaEncryption()
     // md5加密解密
