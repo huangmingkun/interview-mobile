@@ -23,7 +23,7 @@ import './js/common/common-config.js'// 全局引入相关配置
 import Mock from './mock/mock'
 // 根据环境变量决定是否引入mock
 if (process.env.NODE_ENV === 'development') {
-  console.log('process.env.NODE_ENV', process.env.API)
+  // console.log('process.env.NODE_ENV', process.env.API)
   Mock.mockData()
 }
 // 引入mock

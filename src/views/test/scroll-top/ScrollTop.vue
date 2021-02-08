@@ -57,7 +57,7 @@ export default {
   beforeRouteLeave (to, from, next) {
     // 导航离开该组件的对应路由时调用
     // 可以访问组件实例 `this`
-    console.log('步骤' + 11111111)
+    console.log('路由步骤' + 11111111)
     const answer = window.confirm('Do you really want to leave? you have unsaved changes!')
     if (answer) {
       next()

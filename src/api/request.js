@@ -70,7 +70,7 @@ export const request = (url, params = {}, config = {}, autoErrorRes = true, auto
       return qs.stringify(params, { arrayFormat: 'indices' })
     }
   }
-  console.log('request请求封装args参数', args)
+  // console.log('request请求封装args参数', args)
   // console.log('axiosCustom(args)', axiosCustom)
   return axiosCustom(args).then((res) => {
     // console.log('封装request请求返回的数据', res)

@@ -43,7 +43,7 @@ export default {
     // 举例来说，对于一个带有动态参数的路径 /foo/:id，在 /foo/1 和 /foo/2 之间跳转的时候，
     // 由于会渲染同样的 Foo 组件，因此组件实例会被复用。而这个钩子就会在这个情况下被调用。
     // 可以访问组件实例 `this`
-    console.log('步骤' + 333333)
+    console.log('路由步骤' + 333333)
     next()
   },
   beforeRouteEnter (to, from, next) {
@@ -53,16 +53,16 @@ export default {
 
     // beforeRouteEnter 守卫 不能 访问 this，因为守卫在导航确认前被调用，因此即将登场的新组件还没被创建。
     // 不过，你可以通过传一个回调给 next来访问组件实例。在导航被确认的时候执行回调，并且把组件实例作为回调方法的参数。
-    console.log('步骤' + 55555555)
+    console.log('路由步骤' + 55555555)
     next(vm => {
-      console.log('步骤' + 88888888)
+      console.log('路由步骤' + 88888888)
       // 通过 `vm` 访问组件实例
     })
   },
   beforeRouteLeave (to, from, next) {
     // 导航离开该组件的对应路由时调用
     // 可以访问组件实例 `this`
-    console.log('步骤' + 11111111)
+    console.log('路由步骤' + 11111111)
     const answer = window.confirm('Do you really want to leave? you have unsaved changes!')
     if (answer) {
       next()

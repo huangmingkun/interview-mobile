@@ -3,31 +3,56 @@
 </template>
 
 <script>
-import {mapActions, mapGetters, mapMutations, mapState} from 'vuex'
+import { mapActions, mapGetters, mapMutations, mapState } from 'vuex'
 export default {
   name: 'Vuex',
   data () {
     return {}
   },
   computed: {
-    // 使用对象展开运算符将此对象混入到外部对象中
-    // mapState、mapGetters辅助函数
-    ...mapState({
+    /**
+     * mapState对象形式（别名） + 开启了命名空间（namespaced: true）
+     * 需要带上模块名称才可以访问对应模块的state，例如下面的'common'模块名称
+     * **/
+    ...mapState('common', {
       vuexLoginData: 'loginData',
       vuexCount: 'count'
     }),
-    ...mapGetters({
-      doneTodo: 'doneTodos',
+    /**
+     * mapGetters对象形式（别名） + 开启了命名空间（namespaced: true）
+     * 需要带上模块名称才可以访问getters，例如下面的'common'模块名称
+     * **/
+    // 方式一（简洁），引入多个模块的getters时，则需要写多个mapGetters
+    ...mapGetters('common', {
+      doneTodos: 'doneTodos',
       doneTodosCount: 'doneTodosCount',
+      gettersTest: 'gettersTest',
       queryById: 'getTodoById'
     })
+    // 方式二（繁琐）
+    // ...mapGetters({
+    //   doneTodos: 'common/doneTodos'
+    // })
+    /**
+     * mapGetters数组形式 + 开启了命名空间（namespaced: true）
+     * 需要带上模块名称才可以访问getters，例如下面的'common'模块名称
+     * **/
+    // ...mapGetters('common', [
+    //   'doneTodos'
+    // ])
   },
   mounted () {
     const that = this
+    /**
+     * 开启了命名空间（namespaced: true）
+     * 需要带上模块名称才可以访问getters，例如下面的'common/doneTodos'
+     * **/
+    // console.log('that.$store.getters[\'common/doneTodos\']', that.$store.getters['common/doneTodos'])
+    console.log('that.doneTodos', that.doneTodos)
     // 提交单个属性
-    let sex = 'w'
+    // let sex = 'w'
     // {sex} --- 对象解构
-    that.addLoginDataMsg({sex})
+    // that.addLoginDataMsg({sex})
     // 提交多个属性--对象形式
     // let sex = {
     //   name: 'hmk',
@@ -37,11 +62,6 @@ export default {
     /**
      * -------vuex
      * **/
-    // --------------------------vuex---state
-    // console.log('vuex--loginData', that.vuexLoginData)
-    // --------------------------vuex---getters
-    // console.log('vuex-getters', that.doneTodo)
-    // console.log('vuex-getters-params', that.doneTodosCount)
     // 注意，getter 在通过方法访问时，每次都会去进行调用，而不会缓存结果。
     // console.log('vuex-getters-queryByParams', that.queryById(1))
     // --------------------------vuex--mutations--mapMutations
@@ -50,15 +70,19 @@ export default {
     // })
     // console.log('after mutations---vuexCount', that.vuexCount)
     // --------------------------vuex--mutations--mapActions
-    that.vuexActionIncrement()
+    // that.increment({amount: 1})
     // console.log('after actions---vuexCount', that.vuexCount)
+    // console.log('getters--模块间通信', that.gettersTest)
+    console.log('actionTest---模块间通信')
+    that.actionTest({abc: 123})
   },
   methods: {
-    ...mapMutations({
-      addLoginDataMsg: 'addLoginDataMsg'
+    ...mapMutations('common', {
+      increment: 'increment'
     }),
-    ...mapActions({
-      vuexActionIncrement: 'actionIncrement'
+    ...mapActions('common', {
+      vuexActionIncrement: 'actionIncrement',
+      actionTest: 'actionTest'
     })
   }
 }

@@ -30,7 +30,7 @@ const routesStatic = [
     ],
     beforeEnter: (to, from, next) => {
       // 路由独享的守卫
-      console.log('步骤' + 44444444)
+      console.log('路由步骤' + 44444444)
       next()
     }
   },
@@ -143,6 +143,11 @@ const routesStatic = [
     path: '/vuex',
     name: 'Vuex',
     component: () => import('@/views/test/vuex/Vuex')
+  },
+  {
+    path: '/VuexDataInteraction',
+    name: 'VuexDataInteraction',
+    component: () => import('@/views/test/vuex/VuexDataInteraction')
   },
   {
     path: '/eventLoop',
