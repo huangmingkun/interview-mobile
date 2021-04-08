@@ -47,8 +47,8 @@ export default {
      * 开启了命名空间（namespaced: true）
      * 需要带上模块名称才可以访问getters，例如下面的'common/doneTodos'
      * **/
-    // console.log('that.$store.getters[\'common/doneTodos\']', that.$store.getters['common/doneTodos'])
-    console.log('that.doneTodos', that.doneTodos)
+    console.log('that.$store.getters[\'common/doneTodos\']', that.$store.getters['common/doneTodos'])
+    // console.log('that.doneTodos', that.doneTodos)
     // 提交单个属性
     // let sex = 'w'
     // {sex} --- 对象解构
@@ -73,8 +73,8 @@ export default {
     // that.increment({amount: 1})
     // console.log('after actions---vuexCount', that.vuexCount)
     // console.log('getters--模块间通信', that.gettersTest)
-    console.log('actionTest---模块间通信')
-    that.actionTest({abc: 123})
+    // console.log('actionTest---模块间通信')
+    // that.actionTest({abc: 123})
   },
   methods: {
     ...mapMutations('common', {

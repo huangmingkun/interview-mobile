@@ -95,6 +95,16 @@ const routesStatic = [
     component: () => import('@/views/test/js-test/JsTest')
   },
   {
+    path: '/Algorithm',
+    name: 'Algorithm',
+    component: () => import('@/views/test/js-test/Algorithm')
+  },
+  {
+    path: '/ClickDecoration',
+    name: 'ClickDecoration',
+    component: () => import('@/views/test/js-test/ClickDecoration')
+  },
+  {
     path: '/VueRender',
     name: 'VueRender',
     component: () => import('@/views/test/js-test/VueRender')
@@ -118,6 +128,11 @@ const routesStatic = [
     path: '/css',
     name: 'CssTest',
     component: () => import('@/views/test/css-test/CssTest')
+  },
+  {
+    path: '/SystecElectronDemo',
+    name: 'SystecElectronDemo',
+    component: () => import('@/views/test/css-test/SystecElectronDemo')
   },
   {
     path: '/hoverText',

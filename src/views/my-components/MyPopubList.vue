@@ -5,12 +5,17 @@
       v-model="popupVisible"
       :closeOnClickModal="false"
       :position="position">
-      <h2 class="popup-title text_ellipsis" v-if="popopTitle">{{popopTitle}}</h2>
+      <!--<h2 class="popup-title text_ellipsis" v-if="popopTitle">{{popopTitle}}</h2>-->
+      <div class="flex_start">
+        <p class="popup-title text_ellipsis" v-if="popopTitle">{{popopTitle}}</p>
+        <mt-field placeholder="请输入路由名称" v-model="searchName" @keyup.native="searchRouter()"></mt-field>
+<!--        <input v-model="searchName" @keyup="searchRouter()"/>-->
+      </div>
       <div :class="{'margin-bottom60': isCancelBtnShow}"
         class="main-content">
         <p class="popup-content text_ellipsis"
            :class="{'border-bottm': (index!==menuLists.length - 1) || isCancelBtnShow,'selected': $route.path === item.path}"
-           v-for="(item, index) in menuLists"
+           v-for="(item, index) in activeMenuLists"
            :key="index"
            @click="contentSelected(item)">
           {{item.name}}</p>
@@ -32,6 +37,8 @@ export default {
   name: 'MyPopubList',
   data () {
     return {
+      searchName: '',
+      activeMenuLists: []
     }
   },
   props: {
@@ -67,6 +74,11 @@ export default {
   computed: {},
   created () {
   },
+  mounted () {
+    const that = this
+    that.activeMenuLists = that.menuLists
+    that.searchRouter = that.$lodash.debounce(that.searchRouter, 300)
+  },
   methods: {
     // 选择内容后触发父组件的方法
     contentSelected (itemParams) {
@@ -76,6 +88,17 @@ export default {
     cancelPopop () {
       let that = this
       that.$emit('select-content')
+    },
+    searchRouter () {
+      const that = this
+      if (!that.searchName) {
+        that.activeMenuLists = that.menuLists
+        return
+      }
+      that.activeMenuLists = that.menuLists.filter(function (item) {
+        console.log('item.name', item.name)
+        return item.name.toLocaleLowerCase().indexOf(that.searchName.toLocaleLowerCase()) > -1
+      })
     }
   }
 }
