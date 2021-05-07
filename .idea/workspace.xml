@@ -423,18 +423,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="424" y="222" key="#TODO/0.0.1920.1040@0.0.1920.1040" timestamp="1617863855377" />
-    <state x="162" y="111" width="1341" height="905" key="CommitChangelistDialog2" timestamp="1617863871016">
+    <state x="162" y="111" width="1341" height="905" key="CommitChangelistDialog2" timestamp="1620354953329">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="162" y="111" width="1341" height="905" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1617863871016" />
+    <state x="162" y="111" width="1341" height="905" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1620354953329" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1612669620659">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612669620659" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1611299456061">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1611299456061" />
     <state width="1899" height="271" key="GridCell.Tab.0.bottom" timestamp="1612663106059">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -463,18 +459,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="354" y="253" width="1014" height="533" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617863879839" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611135971415">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611135971415" />
     <state x="567" y="220" width="786" height="600" key="find.popup" timestamp="1618207622075">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="567" y="220" width="786" height="600" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1618207622075" />
-    <state x="629" y="311" key="git4idea.merge.GitPullDialog" timestamp="1610935697368">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="629" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610935697368" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1612687114527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

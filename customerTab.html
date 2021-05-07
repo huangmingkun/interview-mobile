@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.css"
+          crossorigin="anonymous">
+
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+
+    <style>
+        #line {
+            position: absolute;
+            width: 100%;
+            overflow: hidden;
+            cursor: n-resize;
+            margin: 0;
+            height: 5px;
+            border: none;
+            border-top: 2px ridge #54b4eb;
+            /*display: none*/
+        }
+
+        #flow-containers {
+            /*position: absolute;*/
+            display: block;
+            /*z-index: 2;*/
+        }
+      .divide-line {
+        display: block;
+        /*margin-top: 10px;*/
+        padding: 5px 0;
+      }
+    </style>
+</head>
+<body>
+
+<div id="top" style="background-color: #eaedf1;height: 100%;overflow: auto">
+    <button id="myTab">show-hide</button>
+    <br/>
+    <span>提升</span><br/>
+    <span>提升</span><br/>
+    <span>提升</span><br/>
+</div>
+
+<div id="flow-containers">
+    <hr id="line"/>
+    <div class="divide-line"></div>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist" id="tab-selector">
+        <li role="presentation"><a href="#basic" id="basic-tab" aria-controls="home" role="tab"
+                                   data-toggle="tab">客户详情</a>
+        </li>
+        <li role="presentation"><a href="#billingInformation" id="billingInformation-tab" aria-controls="profile"
+                                   role="tab"
+                                   data-toggle="tab">开票信息</a></li>
+        <li role="presentation"><a href="#contacts" id="contacts-tab" aria-controls="messages" role="tab"
+                                   data-toggle="tab">联系人</a>
+        </li>
+        <li role="presentation"><a href="#shippingAddress" id="shippingAddress-tab" aria-controls="settings" role="tab"
+                                   data-toggle="tab">收货地址</a>
+        </li>
+        <li role="presentation"><a href="#appendix" id="appendix-tab" aria-controls="settings" role="tab"
+                                   data-toggle="tab">附件</a>
+        </li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <!-- 客户详情 -->
+        <div role="tabpanel" class="tab-pane active" id="basic">
+            <div class="table-responsive" style="margin: 15px">
+                <table class="table table-striped table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>客户名称</td>
+                        <td>。。。</td>
+                        <td>注册地址</td>
+                        <td>。。。</td>
+                        <td>经营地址</td>
+                        <td>。。。</td>
+                        <td>类型</td>
+                        <td>。。。</td>
+                    </tr>
+                    <tr>
+                        <td>黑名单</td>
+                        <td>。。。</td>
+                        <td>行业</td>
+                        <td>。。。</td>
+                        <td>级别</td>
+                        <td>。。。</td>
+                        <td>省份</td>
+                        <td>。。。</td>
+                    </tr>
+                    <tr>
+                        <td>城市</td>
+                        <td>。。。</td>
+                        <td>终端数量</td>
+                        <td>。。。</td>
+                        <td>人员数量</td>
+                        <td>。。。</td>
+                        <td>注册资金</td>
+                        <td>。。。</td>
+                    </tr>
+                    <tr>
+                        <td>成立日期</td>
+                        <td>。。。</td>
+                        <td>邮编</td>
+                        <td colspan="5">。。。</td>
+                    </tr>
+                    <tr>
+                        <td>部门</td>
+                        <td>。。。</td>
+                        <td>业务员</td>
+                        <td>。。。</td>
+                        <td>创建人</td>
+                        <td>。。。</td>
+                        <td>创建时间</td>
+                        <td>。。。</td>
+                    </tr>
+                    <tr>
+                        <td>修改人</td>
+                        <td>。。。</td>
+                        <td>修改时间</td>
+                        <td>。。。</td>
+                        <td>U8分类</td>
+                        <td>。。。</td>
+                        <td>U8编码</td>
+                        <td>。。。</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- 开票信息 -->
+        <div role="tabpanel" class="tab-pane" id="billingInformation">
+            <div class="table-responsive" style="margin: 15px">
+                <table class="table table-striped table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>开票名称</td>
+                        <td>。。。</td>
+                        <td>纳税识别号</td>
+                        <td>。。。</td>
+                        <td>开票地址</td>
+                        <td>。。。</td>
+                        <td>电话</td>
+                        <td>。。。</td>
+                    </tr>
+                    <tr>
+                        <td>开户银行</td>
+                        <td>。。。</td>
+                        <td>银行账号</td>
+                        <td colspan="5">。。。</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- 联系人 -->
+        <div role="tabpanel" class="tab-pane" id="contacts">
+            <div class="table-responsive" style="margin: 15px">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                    <tr>
+                        <td>姓名</td>
+                        <td>称呼</td>
+                        <td>职务</td>
+                        <td>电话</td>
+                        <td>手机</td>
+                        <td>电子邮件</td>
+                        <td>备注</td>
+                        <td>操作</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!--todo-->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- 收货地址 -->
+        <div role="tabpanel" class="tab-pane" id="shippingAddress">
+            <div class="table-responsive" style="margin: 15px">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                    <tr>
+                        <td>收货人</td>
+                        <td>电话</td>
+                        <td>电话</td>
+                        <td>手机</td>
+                        <td>收货地址</td>
+                        <td>备注</td>
+                        <td>操作</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!--todo-->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- 附件 -->
+        <div role="tabpanel" class="tab-pane" id="appendix">
+            <div class="table-responsive" style="margin: 15px">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                    <tr>
+                        <td>附件名称</td>
+                        <td>类型</td>
+                        <td>备注</td>
+                        <td>操作</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!--todo-->
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function getMousePos(ev) {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        var scrollLeft = document.documentElement.scrollLeft || document.body.scrollLeft;
+        return {x: ev.clientX + scrollLeft, y: ev.clientY + scrollTop};
+    }
+    const debug = function () {
+      if ("undefined" !== typeof console) {
+        console.debug.apply(console, arguments);
+      }
+    };
+    let profileTab = $('#profile-tab');
+    let container = $('#flow-containers')[0];
+    profileTab
+        .on('show.bs.tab', (e) => {
+            console.log('show.bs.tab: \n%o', e);
+            let profile = $('#profile');
+            debug('%o', profile);
+            loadProfile(e);
+        })
+        .on('shown.bs.tab', (e) => {
+            debug('shown.bs.tab: \n %o', e);
+        })
+        .on('hide.bs.tab', (e) => {
+            debug('hide.bs.tab: \n %o', e)
+        })
+        .on('hidden.bs.tab', (e) => {
+            debug('hidden.bs.tab: \n %o', e)
+        })
+    ;
+    $('#myTab').on('click', (e) => {
+        profileTab.tab('show');
+
+    });
+
+    // 模仿加载数据
+    let loadProfile = function (e) {
+        debug('loadProfile');
+        let profile = $('#profile')[0];
+        debug('%o', profile);
+        // profile.innerHTML = '<h2>profile loaded from server....</h2>'
+    };
+
+    // 从 line 事件
+    const lineElement = $('#line')[0];
+    const topElement = $('#top')[0];
+    let lip=0;
+    lineElement.onmousedown = (md) => {
+        let disY = 0;
+        let mousePos = getMousePos(md);
+        disY = mousePos.y - lineElement.offsetTop - 3;
+        document.onmousemove = (mv) => {
+            //防止div跑出可视框
+            let pos = getMousePos(mv);
+             lip = pos.y - disY;
+            debug('mousePos: ', JSON.stringify(mousePos));
+            if (lip < 0) {
+                lip = 0;
+            } else if (lip > document.documentElement.clientHeight - lineElement.offsetHeight) {
+                lip = document.documentElement.clientHeight - lineElement.offsetHeight;
+            }
+            lineElement.style.top = lip + 'px';
+            // let elementBottom = $('#bottom')[0];
+            container.style.height = lip - $("#searchForm").height() - 97 + 'px';
+            // container.style.height = lip +2 + 'px';
+            topElement.style.height = lip + 'px';
+            // elementBottom.style.height = parseInt(windowHeight) - lip - 5 + 'px';
+            // elementBottom.style.top = lip + 5 + 'px';
+            // changeCountLocation();
+            return false;
+        };
+        //移除监听
+        document.onmouseup = function (ev) {
+            document.onmousemove = null; //将move清除
+            document.onmouseup = null;
+        };
+
+
+        //固定div高度
+        // lineElement.css("top", topElement.height()  + "px");
+        // lineElement.css("top", topElement.width() + "px");
+    };
+
+</script>
+</body>
+</html>
