@@ -48,7 +48,7 @@ module.exports = {
     index: path.resolve(__dirname, '../../dist/index.html'), // index存放的路径
 
     // Paths
-    assetsRoot: path.resolve(__dirname, '../../dist'), // 打包后内容存放的地方（相对于路径）
+    assetsRoot: path.resolve(__dirname, '../dist'), // 打包后内容存放的地方（相对于路径）
     assetsSubDirectory: 'static', // 静态资源存放的文件夹名
     assetsPublicPath: './', // 解决打包放到服务器白屏的问题（默认为"/"）
 

@@ -62,8 +62,7 @@ export default {
       console.log('setObj', setObj) // 打印{1,2,3}
     },
     test () {
-      console.log('testValue', testValue)
-      const testValue1 = 2
+      console.log(66666666, this)
     }
   },
   created () {

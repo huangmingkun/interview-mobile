@@ -95,6 +95,11 @@ const routesStatic = [
     component: () => import('@/views/test/js-test/JsTest')
   },
   {
+    path: '/Closure',
+    name: 'Closure',
+    component: () => import('@/views/test/js-test/Closure')
+  },
+  {
     path: '/Algorithm',
     name: 'Algorithm',
     component: () => import('@/views/test/js-test/Algorithm')

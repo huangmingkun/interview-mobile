@@ -1,22 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5d09c59-5307-471b-982f-68da340d51aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/views/my-components/MyRange.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/test/array/Array.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/test/css-test/CssTest.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/test/css-test/HoverText.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/test/css-test/Triangle.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/test/grid/Grid.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/test/js-test/JsTest.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/test/range/Range.vue" afterDir="false" />
+    <list default="true" id="b5d09c59-5307-471b-982f-68da340d51aa" name="Default Changelist" comment="新增功能">
+      <change afterPath="$PROJECT_DIR$/src/views/test/js-test/Closure.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/interview-mobile.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/interview-mobile.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-error.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/css/app.d51578d4d33f179a8e541be811a5e878.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/css/app.d51578d4d33f179a8e541be811a5e878.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/img/classRoom.7fc69c7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/0.131459936d3aff7ab08a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/0.131459936d3aff7ab08a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/1.f9626ccbb1db629214b0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/1.f9626ccbb1db629214b0.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/2.3d257e5e1d6265c4e382.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/2.3d257e5e1d6265c4e382.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/3.a84843094c2a956ead51.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/3.a84843094c2a956ead51.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/4.d91dc31f69f87a605272.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/4.d91dc31f69f87a605272.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/5.b516b92493d3cbef5718.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/5.b516b92493d3cbef5718.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/6.33340bf7e4a3fc18af00.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/6.33340bf7e4a3fc18af00.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/7.2208bfd8f5baab7482f2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/7.2208bfd8f5baab7482f2.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/8.929ec06ee399723e67ce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/8.929ec06ee399723e67ce.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/app.6e75fd0fce27c8997c15.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/app.6e75fd0fce27c8997c15.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/manifest.6c12296d1ad8069ab619.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/manifest.6c12296d1ad8069ab619.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/vendor.d5b6878c666377ffa699.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/vendor.d5b6878c666377ffa699.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/routesStatic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/routesStatic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/test/debounce-throttle/DebounceOrThrottle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/test/debounce-throttle/DebounceOrThrottle.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/test/encryption/Encryption.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/test/encryption/Encryption.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/test/js-test/JsTest.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/test/js-test/JsTest.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,15 +56,22 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="Markdown" />
         <option value="JavaScript File" />
         <option value="HTML File" />
-        <option value="Markdown" />
         <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/huangmingkun/interview-mobile.git" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1bW4g2qyEJnF68m6XrpYbp9ItHZ" />
   <component name="ProjectViewState">
@@ -48,10 +81,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ToolWindowStructure.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -63,7 +97,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\self-project\vue-project\interview-mobile\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="copyright.filetypes.Vue.js" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="D:\software\webstorm\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -73,12 +107,40 @@
       <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\src\views\test" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\src\api" />
-      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\static\pulugins\clipboard" />
-      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\static\pulugins" />
-      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\src\assets\iconfont" />
-      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\src\views\my-components" />
+      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile" />
+      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\src\assets\img\test" />
+      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\src\store\modules" />
+      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\src\views\test\js-test" />
+      <recent name="D:\self-project\self-project\vue-project\interview\interview-mobile\src\js\mixins" />
     </key>
+  </component>
+  <component name="RunManager" selected="npm.build">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start-ele" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start-ele" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.start-ele" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -189,7 +251,64 @@
       <workItem from="1600157294629" duration="1388000" />
       <workItem from="1600223500276" duration="19000" />
       <workItem from="1600242172818" duration="6813000" />
-      <workItem from="1600408145890" duration="758000" />
+      <workItem from="1600408145890" duration="3761000" />
+      <workItem from="1600850223376" duration="1531000" />
+      <workItem from="1601280600269" duration="660000" />
+      <workItem from="1602208922852" duration="17375000" />
+      <workItem from="1602310525012" duration="12000" />
+      <workItem from="1602490682221" duration="913000" />
+      <workItem from="1602491632285" duration="8090000" />
+      <workItem from="1602638443425" duration="846000" />
+      <workItem from="1603086150341" duration="2651000" />
+      <workItem from="1603156951772" duration="3962000" />
+      <workItem from="1603675600080" duration="2161000" />
+      <workItem from="1603700186497" duration="16972000" />
+      <workItem from="1603936012257" duration="6515000" />
+      <workItem from="1604383694392" duration="1850000" />
+      <workItem from="1604459380179" duration="2000" />
+      <workItem from="1604557986350" duration="3529000" />
+      <workItem from="1605232539328" duration="2055000" />
+      <workItem from="1605585313532" duration="175000" />
+      <workItem from="1605766878541" duration="3746000" />
+      <workItem from="1605788716243" duration="8000" />
+      <workItem from="1605793031581" duration="931000" />
+      <workItem from="1605835586002" duration="4126000" />
+      <workItem from="1606093733887" duration="2746000" />
+      <workItem from="1606204535367" duration="2626000" />
+      <workItem from="1606442790692" duration="581000" />
+      <workItem from="1606961312004" duration="1255000" />
+      <workItem from="1607934600948" duration="2367000" />
+      <workItem from="1608258620596" duration="905000" />
+      <workItem from="1608270427579" duration="11667000" />
+      <workItem from="1608535050099" duration="42000" />
+      <workItem from="1608600006195" duration="1638000" />
+      <workItem from="1608715021655" duration="1256000" />
+      <workItem from="1608788973245" duration="13000" />
+      <workItem from="1608880207511" duration="2566000" />
+      <workItem from="1609117782806" duration="2530000" />
+      <workItem from="1609232892887" duration="2769000" />
+      <workItem from="1609395325328" duration="13355000" />
+      <workItem from="1609762833407" duration="1799000" />
+      <workItem from="1609827763499" duration="2085000" />
+      <workItem from="1610072216659" duration="2593000" />
+      <workItem from="1610091966923" duration="8948000" />
+      <workItem from="1610437892526" duration="39505000" />
+      <workItem from="1610700528364" duration="56575000" />
+      <workItem from="1611296768745" duration="5433000" />
+      <workItem from="1611803231607" duration="1256000" />
+      <workItem from="1611891371987" duration="2211000" />
+      <workItem from="1612662345535" duration="293000" />
+      <workItem from="1612662693739" duration="908000" />
+      <workItem from="1612663736785" duration="1269000" />
+      <workItem from="1612665188630" duration="1862000" />
+      <workItem from="1612677269791" duration="23747000" />
+      <workItem from="1614154835422" duration="15908000" />
+      <workItem from="1615184458660" duration="41327000" />
+      <workItem from="1615971938097" duration="22068000" />
+      <workItem from="1617863231352" duration="9818000" />
+      <workItem from="1618207554715" duration="10044000" />
+      <workItem from="1618477433446" duration="908000" />
+      <workItem from="1620354563494" duration="350000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1596681554004</created>
@@ -212,58 +331,157 @@
       <option name="project" value="LOCAL" />
       <updated>1597286371315</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="新增功能">
+      <created>1600413821637</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600413821637</updated>
+    </task>
+    <task id="LOCAL-00005" summary="新增功能">
+      <created>1602211405967</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602211405967</updated>
+    </task>
+    <task id="LOCAL-00006" summary="新增功能">
+      <created>1606204590195</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606204590195</updated>
+    </task>
+    <task id="LOCAL-00007" summary="新增功能">
+      <created>1610935689079</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610935689079</updated>
+    </task>
+    <task id="LOCAL-00008" summary="新增功能">
+      <created>1611130735494</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611130735494</updated>
+    </task>
+    <task id="LOCAL-00009" summary="新增功能">
+      <created>1612669658564</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1612669658564</updated>
+    </task>
+    <task id="LOCAL-00010" summary="新增功能">
+      <created>1612756283654</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1612756283655</updated>
+    </task>
+    <task id="LOCAL-00011" summary="新增功能">
+      <created>1617863872162</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1617863872162</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="1" />
     <MESSAGE value="新增clipboard" />
     <MESSAGE value="新增功能" />
     <option name="LAST_COMMIT_MESSAGE" value="新增功能" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="179" key="#ESLint" timestamp="1596677523191">
+    <state x="552" y="179" key="#ESLint" timestamp="1615195717470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="179" key="#ESLint/0.0.1920.1040@0.0.1920.1040" timestamp="1596677523191" />
-    <state x="162" y="111" width="1341" height="818" key="CommitChangelistDialog2" timestamp="1597286370582">
+    <state x="552" y="179" key="#ESLint/0.0.1920.1040@0.0.1920.1040" timestamp="1615195717470" />
+    <state x="424" y="222" key="#TODO" timestamp="1617863855377">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="162" y="111" width="1341" height="818" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597286370582" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1597199150579">
+    <state x="424" y="222" key="#TODO/0.0.1920.1040@0.0.1920.1040" timestamp="1617863855377" />
+    <state x="162" y="111" width="1341" height="905" key="CommitChangelistDialog2" timestamp="1617863871016">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597199150579" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1597042514990">
+    <state x="162" y="111" width="1341" height="905" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1617863871016" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1612669620659">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597042514990" />
-    <state x="684" y="231" key="RollbackChangesDialog" timestamp="1597285555505">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612669620659" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1611299456061">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="684" y="231" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597285555505" />
-    <state x="354" y="253" width="1014" height="533" key="Vcs.Push.Dialog.v2" timestamp="1597286401600">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1611299456061" />
+    <state width="1899" height="271" key="GridCell.Tab.0.bottom" timestamp="1612663106059">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="354" y="253" width="1014" height="533" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597286401600" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596442825753">
+    <state width="1899" height="271" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612663106059" />
+    <state width="1899" height="271" key="GridCell.Tab.0.center" timestamp="1612663106059">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596442825753" />
-    <state x="567" y="220" width="786" height="600" key="find.popup" timestamp="1596765287563">
+    <state width="1899" height="271" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612663106059" />
+    <state width="1899" height="271" key="GridCell.Tab.0.left" timestamp="1612663106059">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="567" y="220" width="786" height="600" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596765287563" />
-    <state x="629" y="311" key="git4idea.merge.GitPullDialog" timestamp="1597286380571">
+    <state width="1899" height="271" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612663106059" />
+    <state width="1899" height="271" key="GridCell.Tab.0.right" timestamp="1612663106059">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="629" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597286380571" />
-    <state x="616" y="173" width="670" height="676" key="search.everywhere.popup" timestamp="1599622984125">
+    <state width="1899" height="271" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612663106059" />
+    <state x="684" y="231" key="RollbackChangesDialog" timestamp="1612669631761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="173" width="670" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599622984125" />
+    <state x="684" y="231" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612669631761" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1617005240685">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1617005240685" />
+    <state x="354" y="253" width="1014" height="533" key="Vcs.Push.Dialog.v2" timestamp="1617863879839">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="354" y="253" width="1014" height="533" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617863879839" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611135971415">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611135971415" />
+    <state x="567" y="220" width="786" height="600" key="find.popup" timestamp="1618207622075">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="567" y="220" width="786" height="600" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1618207622075" />
+    <state x="629" y="311" key="git4idea.merge.GitPullDialog" timestamp="1610935697368">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="629" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610935697368" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1612687114527">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612687114527" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1614304813288">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614304813288" />
   </component>
 </project>
