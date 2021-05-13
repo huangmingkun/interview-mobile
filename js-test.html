@@ -14,10 +14,10 @@
 <select>111</select>
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script>
-  console.log('$(\'input\')', $("input,select"))
-  $("input,select").each(function (val) {
-    console.log(11111, $("input,select")[val].value)
-  })
+  // console.log('$(\'input\')', $("input,select"))
+  // $("input,select").each(function (val) {
+  //   console.log(11111, $("input,select")[val].value)
+  // })
   // test()
   // function test () {
   //   console.log(testValue())
@@ -107,6 +107,40 @@
   // }
   // obj.b();  // undefined window{...} ****
   // obj.c();  // 10 Object {...}
+
+  // 定义常量MY_FAV并赋值7
+  let MY_FAV = 7;
+
+  // 报错 - Uncaught TypeError: Assignment to constant variable.
+  // MY_FAV = 20;
+
+  // MY_FAV is 7
+  console.log('1111-my favorite number is: ' + MY_FAV);
+
+  // 尝试重新声明会报错
+  // Uncaught SyntaxError: Identifier 'MY_FAV' has already been declared
+  // const MY_FAV = 20;
+
+  // MY_FAV 保留给上面的常量，这个操作会失败
+  // var MY_FAV = 20;
+
+  // 也会报错
+  // let MY_FAV = 20;
+
+  if (MY_FAV === 7) {
+    // 没问题，并且创建了一个块作用域变量 MY_FAV
+    // (works equally well with let to declare a block scoped non const variable)
+    let MY_FAV = 20;
+
+    // MY_FAV 现在为 20
+    console.log('2222-my favorite number is ' + MY_FAV);
+
+    // 这被提升到全局上下文并引发错误
+    // var MY_FAV = 20;
+  }
+
+  // MY_FAV 依旧为7
+  console.log('3333-my favorite number is ' + MY_FAV);
 </script>
 </body>
 </html>

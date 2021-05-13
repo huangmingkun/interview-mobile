@@ -135,6 +135,16 @@ const routesStatic = [
     component: () => import('@/views/test/css-test/CssTest')
   },
   {
+    path: '/CssLayoutFloat',
+    name: 'CssLayoutFloat',
+    component: () => import('@/views/test/css-test/CssLayoutFloat')
+  },
+  {
+    path: '/CssLayoutPosition',
+    name: 'CssLayoutPosition',
+    component: () => import('@/views/test/css-test/CssLayoutPosition')
+  },
+  {
     path: '/SystecElectronDemo',
     name: 'SystecElectronDemo',
     component: () => import('@/views/test/css-test/SystecElectronDemo')
