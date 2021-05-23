@@ -6,7 +6,6 @@
 
 <script>
 'use strict'
-var testValue = 111;
 export default {
   name: 'Test',
   methods: {
@@ -62,7 +61,8 @@ export default {
       console.log('setObj', setObj) // 打印{1,2,3}
     },
     test () {
-      console.log(66666666, this)
+      const mySet = new Set([1, 2, 3, 4])
+      console.log('mySet', mySet)
     }
   },
   created () {
