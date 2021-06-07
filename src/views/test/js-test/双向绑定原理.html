@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+<div id="app">
+  <input type="text" id="a">
+  <span id="b"></span>
+  <button id="btn">点击获取值</button>
+</div>
+</body>
+<script>
+  var obj = {};  //定义一个空对象
+  var val = 'zhao';  //赋予初始值
+
+  Object.defineProperty(obj, 'val', {//定义要修改对象的属性
+    get: function () {
+      console.log('触发get')
+      return val;
+    },
+    set: function (newVal) {
+      console.log('触发set')
+      val = newVal;//定义val等于修改后的内容
+      document.getElementById('a').value = val;//让文本框的内容等于val
+      document.getElementById('b').innerHTML = val;//让span的内容等于val
+    }
+  });
+
+  var btnClick = document.getElementById('btn')
+  btnClick.addEventListener('click', function () {
+    console.log(obj.val)
+  })
+
+
+  var inputA = document.getElementById('a')
+  inputA.addEventListener('keyup', function (e) {//当在文本框输入内容时让对象里你定义的val等于文本框的值
+    console.log(e)
+    obj.val = e.target.value;
+  })
+
+</script>
+
+</html>

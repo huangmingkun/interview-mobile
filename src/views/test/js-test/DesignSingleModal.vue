@@ -24,20 +24,20 @@ function demo () {
   var a = Singleton.getInstance("aa");
   var b = Singleton.getInstance("bb");
 
-  console.log(a===b)    // true
+  console.log(a === b) // true
 }
 
 // eslint-disable-next-line no-unused-vars
 function instanceDemo () {
   (function () {
-    //管理单例的逻辑代码，如果没有数据则创建，有数据则返回
+    // 管理单例的逻辑代码，如果没有数据则创建，有数据则返回
     var getSingle = function(fn){ //参数为创建对象的方法
       var result;
       return function(){ //判断是Null或赋值
         return result || (result = fn.apply(this,arguments));
       };
     };
-    //创建登录窗口方法
+    // 创建登录窗口方法
     var createLoginLayer = function(){
       var div = document.createElement('div');
       div.innerHTML = '我是登录浮窗';
@@ -45,10 +45,10 @@ function instanceDemo () {
       document.body.appendChild(div);
       return div;
     };
-    //单例方法
+    // 单例方法
     var createSingleLoginLayer = getSingle(createLoginLayer);
 
-    //使用惰性单例，进行创建
+    // 使用惰性单例，进行创建
     document.getElementById('loginBtn').onclick = function(){
       var loginLayer = createSingleLoginLayer();
       loginLayer.style.display = 'block';

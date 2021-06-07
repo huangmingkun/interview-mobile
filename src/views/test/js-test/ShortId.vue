@@ -28,7 +28,7 @@ export default {
     // 通过shortId插件生成唯一的id
     personsKeys () {
       console.log(shortId.generate())
-      let personKeys = this.persons.map(p => shortId.generate())
+      let personKeys = this.persons.map(() => shortId.generate())
       console.log('personKeys', personKeys)
       return personKeys
     }

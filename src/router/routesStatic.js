@@ -150,6 +150,11 @@ const routesStatic = [
     component: () => import('@/views/test/css-test/SystecElectronDemo')
   },
   {
+    path: '/Animation',
+    name: 'Animation',
+    component: () => import('@/views/test/css-test/Animation')
+  },
+  {
     path: '/hoverText',
     name: 'hoverText',
     component: () => import('@/views/test/css-test/HoverText')
@@ -168,6 +173,11 @@ const routesStatic = [
     path: '/jieGou',
     name: 'Es6JieGou',
     component: () => import('@/views/test/js-test/Es6JieGou')
+  },
+  {
+    path: '/PromiseAndAsync',
+    name: 'PromiseAndAsync',
+    component: () => import('@/views/test/js-test/PromiseAndAsync')
   },
   {
     path: '/vuex',
@@ -223,6 +233,16 @@ const routesStatic = [
     path: '/VueKey',
     name: 'VueKey',
     component: () => import('@/views/test/js-test/VueKey')
+  },
+  {
+    path: '/AttendanceCharts',
+    name: 'AttendanceCharts',
+    component: () => import('@/views/test/echart/AttendanceCharts')
+  },
+  {
+    path: '/WatchTest',
+    name: 'WatchTest',
+    component: () => import('@/views/test/watch/WatchTest')
   },
   {
     path: '/slot',

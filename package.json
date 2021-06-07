@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "alloyfinger": "^0.1.16",
+    "echarts": "^4.1.0",
     "axios": "^0.19.2",
     "clipboard": "^2.0.6",
     "jquery": "^3.5.1",

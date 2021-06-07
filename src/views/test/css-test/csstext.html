@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    /*方法一*/
+    .outer {
+      width: 200px;
+      height: 200px;
+      background-color: #1dff94;
+      position: relative;
+    }
+    .inner {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      border: 1px solid transparent;
+      background-color: #9ec5d7;
+      margin: auto;
+    }
+    /*方法二*/
+    /*.outer {*/
+    /*  display: flex;*/
+    /*  width: 200px;*/
+    /*  height: 200px;*/
+    /*  justify-content: center;*/
+    /*  align-content: center;*/
+    /*  background-color: #1dff94;*/
+    /*}*/
+    /*.inner {*/
+    /*  border: 1px solid transparent;*/
+    /*  background-color: #1b75a3;*/
+    /*  margin: auto;*/
+    /*  width: 100px;*/
+    /*  height: 100px;*/
+    /*}*/
+  </style>
+</head>
+<body>
+<h1 style="margin-bottom: 90px">使 div.inner 定位在 div.outer 的 正中央</h1>
+<div class="outer">
+  <div class="inner">123</div>
+</div>
+</body>
+</html>

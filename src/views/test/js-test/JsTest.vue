@@ -53,26 +53,25 @@ export default {
         console.log(x, y, z) // 3 4 5
         return x + y + z
       }
-      add(3)(4)(5)
+      const temp = add(3)(4)(5)
+      console.log('temp', temp)
     },
     addUniqueObj () {
       // Set构造函数创建独一无二值的对象
       const setObj = new Set([1, 1, 2, 3, 2])
-      console.log('setObj', setObj) // 打印{1,2,3}
+      console.log('setObj', setObj.keys()) // 打印{1,2,3}
     },
     test () {
-      const mySet = new Set([1, 2, 3, 4])
-      console.log('mySet', mySet)
     }
   },
   created () {
     const that = this
-    // that.preParams()
+    that.preParams()
     // that.methodJsLink() // 方法的链式调用
     // that.addUniqueObj() // Set构造函数创建独一无二值的对象
     // 整数反转
     // that.intReverse()
-    that.test()
+    // that.test()
   }
 }
 </script>

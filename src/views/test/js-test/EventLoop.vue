@@ -43,6 +43,7 @@ var promise = new Promise(function executor (resolve) {
   console.log(5)
 })
 console.log(3)
+
 export default {
   name: 'EventLoop'
 }
@@ -51,5 +52,6 @@ export default {
 <style scoped>
   .event-loop-step li {
     padding: 3px 0;
+    position: absolute;
   }
 </style>

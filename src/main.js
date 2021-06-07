@@ -20,6 +20,8 @@ import filters from './js/common/utils'
 import Lodash from 'lodash' // lodash--js函数
 import './js/directive/directives'// 全局引入指令
 import './js/common/common-config.js'// 全局引入相关配置
+// 引入echarts
+import echarts from 'echarts'
 import Mock from './mock/mock'
 // 根据环境变量决定是否引入mock
 if (process.env.NODE_ENV === 'development') {
@@ -43,6 +45,8 @@ Vue.config.productionTip = false
 Object.keys(filters).forEach((key) => {
   Vue.filter(key, filters[key])
 })
+Vue.prototype.$echarts = echarts
+Vue.config.productionTip = false
 // 全局注册组件--方式一
 // Vue.component('base-layout', baseLayout)
 

@@ -49,6 +49,7 @@ export default {
   methods: {
     changeData () {
       const that = this
+      that.level = 1
       that.childData = 'I am Fine'
     }
   }
