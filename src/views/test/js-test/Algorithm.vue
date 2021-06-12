@@ -71,13 +71,28 @@ export default {
         return '该数组不存在符合条件的两个值'
       }
       console.log('两数之和运算结果', actionMethod(tempArr, target))
+    },
+    // 寻找1-n的所有质数
+    findPrimeNumbers (n) {
+      let resultArr = []
+      for (let i = 2; i <= n; i++) {
+        for (let j = 2; j < i; j++) {
+          if (i % j === 0) {
+            console.log(i, j)
+            resultArr.push(i)
+            break
+          }
+        }
+      }
+      return resultArr
     }
   },
   created () {
     const that = this
     // that.mergesTwoOrderdIntegers() // 两个有序整数数组合并
     // that.formatFlatUniqueArray() // 扁平化去并除其中重复部分数据，最终得到一个升序且不重复的数组
-    that.twoNumsAdd() // 从数组中找出两数之和等于输入值的两个值
+    // that.twoNumsAdd() // 从数组中找出两数之和等于输入值的两个值
+    console.log('1-n的所有质数', that.findPrimeNumbers(11)) // 寻找1-n的所有质数
   }
 }
 </script>

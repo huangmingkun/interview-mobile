@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import { debounce } from 'lodash'
+import { debounce } from 'lodash/function'
 export default {
   name: 'DebounceOrThrottle',
   data () {
@@ -30,15 +30,15 @@ export default {
     }
   },
   methods: {
-    clickMethod () {
+    clickMethod: debounce(function () {
       let that = this
       console.log(111)
       that.handle()
-      // that.debounce(that.handle, 5000)()
-      // that.throttling(that.handle, 500, 1000)()
-    },
+      // that.customDebounce(that.handle, 5000)()
+      // that.customThrottling(that.handle, 500, 1000)()
+    }, 500),
     // 闭包方式优化滚动事件---滚动完成再触发事件
-    debounce (fn, time) {
+    customDebounce (fn, time) {
       console.log('time', time)
       let timeout = null
       return function () {
@@ -49,7 +49,7 @@ export default {
       }
     },
     // 自定义方法实现抖动和节流
-    throttling (fn, time, maxTimeLong) {
+    customThrottling (fn, time, maxTimeLong) {
       let timeout = null
       let startTime = Date.parse(new Date())
       return function () {
@@ -72,7 +72,6 @@ export default {
     }
   },
   created () {
-    // this.clickMethod = debounce(this.clickMethod, 500)
   },
   mounted () {
     let that = this
@@ -81,9 +80,9 @@ export default {
      * 节流
      * **/
     // 闭包方式优化滚动事件---滚动完成再触发事件
-    // window.addEventListener('scroll', that.debounce(that.handle, 2000))
+    // window.addEventListener('scroll', that.customDebounce(that.handle, 2000))
     // 节流+防抖动优化滚动事件
-    window.addEventListener('scroll', that.throttling(that.handle, 500, 1000))
+    window.addEventListener('scroll', that.customThrottling(that.handle, 500, 1000))
   }
 }
 </script>

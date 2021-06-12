@@ -9,38 +9,6 @@ export default {
   data () {
     return {}
   },
-  computed: {
-    /**
-     * mapState对象形式（别名） + 开启了命名空间（namespaced: true）
-     * 需要带上模块名称才可以访问对应模块的state，例如下面的'common'模块名称
-     * **/
-    ...mapState('common', {
-      vuexLoginData: 'loginData',
-      vuexCount: 'count'
-    }),
-    /**
-     * mapGetters对象形式（别名） + 开启了命名空间（namespaced: true）
-     * 需要带上模块名称才可以访问getters，例如下面的'common'模块名称
-     * **/
-    // 方式一（简洁），引入多个模块的getters时，则需要写多个mapGetters
-    ...mapGetters('common', {
-      doneTodos: 'doneTodos',
-      doneTodosCount: 'doneTodosCount',
-      gettersTest: 'gettersTest',
-      queryById: 'getTodoById'
-    })
-    // 方式二（繁琐）
-    // ...mapGetters({
-    //   doneTodos: 'common/doneTodos'
-    // })
-    /**
-     * mapGetters数组形式 + 开启了命名空间（namespaced: true）
-     * 需要带上模块名称才可以访问getters，例如下面的'common'模块名称
-     * **/
-    // ...mapGetters('common', [
-    //   'doneTodos'
-    // ])
-  },
   mounted () {
     const that = this
     /**
@@ -75,6 +43,43 @@ export default {
     // console.log('getters--模块间通信', that.gettersTest)
     // console.log('actionTest---模块间通信')
     // that.actionTest({abc: 123})
+    // 开启命名空间--获取模块中的getters
+    console.log('test--modules-getters', that.gettersFromTest)
+    // 开启命名空间--原生调用mutations中的方法
+    that.$store.commit('common/increment', {amount: 1})
+    console.log('vuexCount1111', that.vuexCount)
+    // 开启命名空间--原生调用actions中的方法
+    that.$store.dispatch('common/actionIncrement', {amount: 1})
+    console.log('vuexCount1111', that.vuexCount)
+  },
+  computed: {
+    /**
+     * mapState对象形式（别名） + 开启了命名空间（namespaced: true）
+     * 需要带上模块名称才可以访问对应模块的state，例如下面的'common'模块名称
+     * **/
+    ...mapState('common', {
+      vuexLoginData: 'loginData',
+      vuexCount: 'count'
+    }),
+
+    /**
+     * mapGetters对象形式（别名） + 开启了命名空间（namespaced: true）
+     * 需要带上模块名称才可以访问getters，例如下面的'common'模块名称
+     * **/
+    // 方式一（简洁），引入多个模块的getters时，则需要写多个mapGetters
+    ...mapGetters('common', {
+      doneTodos: 'doneTodos',
+      doneTodosCount: 'doneTodosCount',
+      gettersTest: 'gettersTest',
+      queryById: 'getTodoById'
+    }),
+    ...mapGetters('test', {
+      gettersFromTest: 'gettersFromTest'
+    })
+    // 方式二（繁琐）
+    // ...mapGetters({
+    //   doneTodos: 'common/doneTodos'
+    // })
   },
   methods: {
     ...mapMutations('common', {

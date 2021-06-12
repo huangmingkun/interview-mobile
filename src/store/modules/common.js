@@ -34,14 +34,14 @@ const common = {
   },
   actions: {
     // 常规写法
-    // actionIncrement (context) {
+    // actionIncrement (context, payload) {
     //   console.log('context', context)
-    //   context.commit('increment', {amount: 1})
-    // }
+    //   context.commit('increment', payload)
+    // },
     // Es2015 参数结构简化代码写法
-    actionIncrement ({ dispatch, commit, state, getters }) {
+    actionIncrement ({ dispatch, commit, state, getters }, payload) {
       // console.log('commit', commit)
-      commit('increment', {amount: state.count})
+      commit('increment', payload)
     },
     actionTest (context, payload) {
       // 设置namespaced: true后,访问当前模块的getters时，不需要加模块前缀名称，如下：

@@ -95,6 +95,11 @@ const routesStatic = [
     component: () => import('@/views/test/js-test/JsTest')
   },
   {
+    path: '/Promise',
+    name: 'Promise',
+    component: () => import('@/views/test/js-test/Promise')
+  },
+  {
     path: '/Closure',
     name: 'Closure',
     component: () => import('@/views/test/js-test/Closure')
@@ -133,6 +138,11 @@ const routesStatic = [
     path: '/css',
     name: 'CssTest',
     component: () => import('@/views/test/css-test/CssTest')
+  },
+  {
+    path: '/DeepCssTest',
+    name: 'DeepCssTest',
+    component: () => import('@/views/test/css-test/DeepCssTest')
   },
   {
     path: '/CssLayoutFloat',
@@ -178,6 +188,11 @@ const routesStatic = [
     path: '/PromiseAndAsync',
     name: 'PromiseAndAsync',
     component: () => import('@/views/test/js-test/PromiseAndAsync')
+  },
+  {
+    path: '/ThisPointProblem',
+    name: 'ThisPointProblem',
+    component: () => import('@/views/test/js-test/ThisPointProblem')
   },
   {
     path: '/vuex',
@@ -245,9 +260,19 @@ const routesStatic = [
     component: () => import('@/views/test/watch/WatchTest')
   },
   {
+    path: '/ComponentCommunication',
+    name: 'ComponentCommunication',
+    component: () => import('@/views/test/vue/component-communication/ComponentCommunication')
+  },
+  {
     path: '/slot',
     name: 'Slot',
     component: () => import('@/views/test/slot/Slot')
+  },
+  {
+    path: '*',
+    name: 'Err404',
+    component: () => import('@/views/test/css-test/Err404')
   }
 ]
 

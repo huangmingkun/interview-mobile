@@ -10,8 +10,10 @@ Nprogress.configure({ easing: 'ease', speed: 500, showSpinner: false })
 // console.log('routesStatic1111', routesStatic)
 // console.log('whiteList', whiteList)
 const router = new Router({
-  // 1.路由模式mode，history模式url无“#”，hash模式url有“#”;
-  // 2.打包放在umeet1.0的服务器上，需要hash模式，路由才能正常跳转；history模式会导致路由给“干掉”
+  // 路由模式mode，history模式url无“#”，hash模式url有“#”;
+  // 1.默认 hash 模式 —— 使用 URL 的 hash 来模拟一个完整的 URL，于是当 URL 改变时，页面不会重新加载。
+  // 1.history 模式 —— 路由的 history 模式，这种模式充分利用 history.pushState API 来完成 URL 跳转而无须重新加载页面。
+  // 注意：打包放在umeet1.0的服务器上，需要hash模式，路由才能正常跳转；history模式会导致路由给“干掉”
   mode: 'history',
   routes: routesStatic // 静态路由数据引入
 })
@@ -61,12 +63,12 @@ router.beforeEach((to, from, next) => {
 })
 // 全局解析守卫 --- 在导航被确认之前，同时在所有组件内守卫和异步路由组件被解析之后，解析守卫就被调用。
 router.beforeResolve((to, from, next) => {
-  console.log('路由步骤' + 66666666)
+  // console.log('路由步骤' + 66666666)
   next()
 })
 // 全局后置守卫 --- 这些钩子不会接受 next 函数也不会改变导航本身
 router.afterEach((to, from) => {
-  console.log('路由步骤' + 77777777)
+  // console.log('路由步骤' + 77777777)
   // 进度条结束
   Nprogress.done()
 })
