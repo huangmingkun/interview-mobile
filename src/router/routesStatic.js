@@ -180,6 +180,11 @@ const routesStatic = [
     component: () => import('@/views/test/css-test/ShanGeHua')
   },
   {
+    path: '/localIcons',
+    name: 'LocalIcons',
+    component: () => import('@/views/test/local-icons/LocalIcons')
+  },
+  {
     path: '/jieGou',
     name: 'Es6JieGou',
     component: () => import('@/views/test/js-test/Es6JieGou')
@@ -208,6 +213,11 @@ const routesStatic = [
     path: '/eventLoop',
     name: 'EventLoop',
     component: () => import('@/views/test/js-test/EventLoop')
+  },
+  {
+    path: '/eventLoop1',
+    name: 'EventLoop1',
+    component: () => import('@/views/test/js-test/EventLoop1')
   },
   {
     path: '/designDecorate',
@@ -268,6 +278,11 @@ const routesStatic = [
     path: '/slot',
     name: 'Slot',
     component: () => import('@/views/test/slot/Slot')
+  },
+  {
+    path: '/dynamicDetail',
+    name: 'DynamicDetail',
+    component: () => import('@/views/dynamic-detail/DynamicDetail')
   },
   {
     path: '*',

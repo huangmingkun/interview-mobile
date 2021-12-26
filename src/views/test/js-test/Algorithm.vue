@@ -85,6 +85,10 @@ export default {
         }
       }
       return resultArr
+    },
+    findSumNumbers (n) {
+      const that = this
+      return n - that.findPrimeNumbers(n).length - 1
     }
   },
   created () {
@@ -92,7 +96,8 @@ export default {
     // that.mergesTwoOrderdIntegers() // 两个有序整数数组合并
     // that.formatFlatUniqueArray() // 扁平化去并除其中重复部分数据，最终得到一个升序且不重复的数组
     // that.twoNumsAdd() // 从数组中找出两数之和等于输入值的两个值
-    console.log('1-n的所有质数', that.findPrimeNumbers(11)) // 寻找1-n的所有质数
+    console.log('1-n的所有合数', that.findPrimeNumbers(11)) // 寻找1-n的所有合数
+    console.log('1-n的所有质数', that.findSumNumbers(11)) // 寻找1-n的所有质数
   }
 }
 </script>

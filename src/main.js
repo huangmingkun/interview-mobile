@@ -20,6 +20,7 @@ import filters from './js/common/utils'
 import Lodash from 'lodash' // lodash--js函数
 import './js/directive/directives'// 全局引入指令
 import './js/common/common-config.js'// 全局引入相关配置
+import './assets/local-icon/icons.css'
 // 引入echarts
 import echarts from 'echarts'
 import Mock from './mock/mock'

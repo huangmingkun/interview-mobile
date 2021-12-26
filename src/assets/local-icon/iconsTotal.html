@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <!--jQuery--cdn引入-->
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!--vue--cdn引入-->
+  <script crossorigin="anonymous" integrity="sha512-qRXBGtdrMm3Vdv+YXYud0bixlSfZuGz+FmD+vfXuezWYfw4m5Ov0O4liA6UAlKw2rh9MOYULxbhSFrQCsF1hgg==" src="https://lib.baomitu.com/vue/2.6.14/vue.common.dev.js"></script>
+  <!--clipboard（复制内容）--cdn引入-->
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"> </script>
+  <link rel="stylesheet" type="text/css" href="./icons.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .app-container {
+      position: relative;
+    }
+    .copy-tip {
+      position: absolute;
+      right: 100px;
+      top: 20px;
+      color: #1b75a3;
+    }
+    .input-container {
+      width: 100%;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+    }
+    .input-container input {
+      height: 30px;
+      border-radius: 6px;
+      padding: 0 6px;
+      border: 1px solid #dbdb;
+      outline: none;
+    }
+    .icon-container {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 16px;
+      border: 1px solid #dbdbdb;
+      border-radius: 8px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .icon-item {
+      margin: 10px;
+    }
+    .common-icon {
+      /*flex: 1;*/
+      height: 100px;
+      width: 100px;
+      background-size: contain;
+      background-position:center center;
+      background-repeat: no-repeat;
+    }
+    .icon-name {
+      text-align: center;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div id="app" class="app-container">
+  <!--搜索框-->
+  <div class="input-container">
+    <input v-model="inputVal" @keyup="inputChage()">
+  </div>
+  <!--复制内容后的提示语-->
+  <div class="copy-tip" v-if="isShowTip">
+    <p>复制成功！！！</p>
+  </div>
+  <!--图标-->
+  <div class="icon-container">
+    <div
+      class="icon-item"
+      v-for="(item, idx) in iconsList"
+      :key="idx"
+    >
+      <p class="common-icon" :class="item"></p>
+      <p class="icon-name" @click="copyIcon(item)">{{ item }}</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  let cssNameSArr = [] // 获取css文件内容格式化后，存在此数组中
+
+  // 格式化css文件内容
+  function formatCssData (data) {
+    let tempStr = data.replace(/\s/g, '')
+    let tempArr = tempStr.split('}')
+    tempArr.pop() // 移除最后一个多余的数值
+    tempArr.forEach( str => {
+      let itemStr = str.split('{')[0].replace('.', '')
+      cssNameSArr.push(itemStr)
+    })
+    return cssNameSArr
+  }
+  // 获取css文件内容
+  $.get('./icons.css', function (data) {
+    cssNameSArr = formatCssData(data)
+    console.log('格式css文件内容后的结果', cssNameSArr)
+  })
+
+  // 防抖
+  function debounce (fn, outTime) {
+    let timer = null
+    return function () {
+      if ( timer ) clearTimeout(timer)
+      timer = setTimeout( function () {
+        fn()
+      }, outTime)
+    }
+  }
+
+  const vm = new Vue ({
+
+    data () {
+      return {
+        iconsList: [], // 图标数组
+        isShowTip: false, // 是否现实复制成功信息
+        inputVal: '' // 搜索框的值
+      }
+    },
+    created () {
+      // 初始，默认赋值全部图标
+      this.iconsList = cssNameSArr
+    },
+    methods: {
+      // 筛选图标方法
+      inputChage: debounce(function () {
+        console.log('输入的值', vm.inputVal)
+        // 没值时，赋值全部的图标
+        if ( !vm.inputVal ) {
+          vm.iconsList = cssNameSArr
+          return
+        }
+        // 筛选
+        vm.iconsList = cssNameSArr.filter( item => {
+          let lowerItem = item.toLowerCase()
+          let inputVal =  vm.inputVal.toLowerCase()
+          return lowerItem.indexOf(inputVal) > -1
+        })
+        console.log('筛选后的数组', vm.iconsList)
+      }, 300),
+      copyIcon (item) {
+        const that = this
+        console.log('输入的内容', item)
+        // 复制内容事件
+        let clipboard = new ClipboardJS(".icon-name",{
+          text : function() {
+            return item
+          }
+        });
+
+        clipboard.on('success',function(e){
+          console.log(e)
+          that.isShowTip = true
+          setTimeout(function () {
+            that.isShowTip = false
+          }, 1500)
+          // 防止多次复制时出现多次提示
+          // clipboard.destroy();
+        });
+
+        clipboard.on('error',function(e){
+          console.log(e);
+          // 防止多次复制时出现多次提示
+          clipboard.destroy();
+        });
+
+      }
+    }
+
+  }).$mount('#app')
+
+</script>
+</body>
+</html>
