@@ -1,8 +1,12 @@
 <template>
-  <div class="common-detail">
-    <div class="detail-item">
-      <div class="label">口号</div>
-      <div class="content">今天不努力，明天拧螺丝</div>
+  <div class="detail-item">
+    <div class="label">{{ itemData.label }}</div>
+    <div
+      class="content"
+      :style="itemData.style"
+      @click.stop="itemData.clickFn && itemData.clickFn()"
+    >
+      {{ itemData.formatFn ? itemData.formatFn() : itemData.value }}
     </div>
   </div>
 </template>
@@ -10,8 +14,15 @@
 <script>
 export default {
   name: 'CommonDetail',
-  data () {
-    return {
+  props: {
+    itemData: {
+      type: Object,
+      default: {}
+    }
+  },
+  methods: {
+    formatFn (itemData) {
+
     }
   }
 }
@@ -19,13 +30,17 @@ export default {
 
 <style scoped lang="less">
 .detail-item {
-  margin: 8px;
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 12px 16px;
-  font-size: 14px;
+  margin-bottom: 12px;
   .label {
     color: #999999;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .content {
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
   }
 }
 </style>

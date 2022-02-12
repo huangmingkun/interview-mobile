@@ -90,6 +90,16 @@ const routesStatic = [
     component: () => import('@/views/test/js-test/MemoryFunc')
   },
   {
+    path: '/TraverseArray',
+    name: 'TraverseArray',
+    component: () => import('@/views/test/js-test/TraverseArray')
+  },
+  {
+    path: '/TraverseObject',
+    name: 'TraverseObject',
+    component: () => import('@/views/test/js-test/TraverseObject')
+  },
+  {
     path: '/JsTest',
     name: 'JsTest',
     component: () => import('@/views/test/js-test/JsTest')
