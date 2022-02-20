@@ -150,6 +150,11 @@ const routesStatic = [
     component: () => import('@/views/test/css-test/CssTest')
   },
   {
+    path: '/ClearFloat',
+    name: 'ClearFloat',
+    component: () => import('@/views/test/css-test/ClearFloat')
+  },
+  {
     path: '/DeepCssTest',
     name: 'DeepCssTest',
     component: () => import('@/views/test/css-test/DeepCssTest')
