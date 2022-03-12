@@ -16,17 +16,25 @@ export default {
     }
   },
   created () {
-    // 对象数组去重
-    var oldArr = [
-      { id: 2 }, { id: 4 }, { id: 3 }, { id: 3 }, { id: 4 }, { id: 6 }
-    ]
-    this.oldArr = oldArr
-    // console.log('原始数组', arr)
-    let newArr = this.unique(oldArr)
-    this.newArr = newArr
-    // console.log('去重后数组', newArr)
+    this.unique1()
+    this.unique2()
   },
   methods: {
+    unique2 () {
+      let testArr = [1, 2, 2, 3, 4]
+      console.log(1111, new Set(testArr))
+      let resultArr = Array.from(new Set(testArr))
+      console.log(resultArr)
+    },
+    unique1 () {
+      // 对象数组去重
+      let oldArr = [
+        { id: 2 }, { id: 4 }, { id: 3 }, { id: 3 }, { id: 4 }, { id: 6 }
+      ]
+      this.oldArr = oldArr
+      let newArr = this.unique(oldArr)
+      this.newArr = newArr
+    },
     unique (oldArr) {
       let uniqueArr = []
       let tempObj = {}

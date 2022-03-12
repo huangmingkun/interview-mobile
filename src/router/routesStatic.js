@@ -195,6 +195,11 @@ const routesStatic = [
     component: () => import('@/views/test/css-test/ShanGeHua')
   },
   {
+    path: '/VHCenter',
+    name: 'VHCenter',
+    component: () => import('@/views/test/css-test/VHCenter')
+  },
+  {
     path: '/localIcons',
     name: 'LocalIcons',
     component: () => import('@/views/test/local-icons/LocalIcons')
@@ -288,6 +293,16 @@ const routesStatic = [
     path: '/ComponentCommunication',
     name: 'ComponentCommunication',
     component: () => import('@/views/test/vue/component-communication/ComponentCommunication')
+  },
+  {
+    path: '/Vmodel',
+    name: 'Vmodel',
+    component: () => import('@/views/test/vue/v-model/Vmodel')
+  },
+  {
+    path: '/vBindSync',
+    name: 'vBindSync',
+    component: () => import('@/views/test/vue/v-bind-sync/VbindSync')
   },
   {
     path: '/slot',
