@@ -315,6 +315,16 @@ const routesStatic = [
     component: () => import('@/views/dynamic-detail/DynamicDetail')
   },
   {
+    path: '/pageA',
+    name: 'pageA',
+    component: () => import('@/views/router-params/pageA')
+  },
+  {
+    path: '/pageB',
+    name: 'pageB',
+    component: () => import('@/views/router-params/pageB')
+  },
+  {
     path: '*',
     name: 'Err404',
     component: () => import('@/views/test/css-test/Err404')
