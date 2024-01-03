@@ -10,17 +10,11 @@ export default {
   methods: {
     gotoPageB () {
       this.$router.push({
-        name: 'pageB',
+        path: '/pageB',
+        // 传递参数为对象组成的数组或者对象时，页面刷新会导致值变为[object, Object]，需要使用JSON.stringify()转为字符串，接收时使用JSON.parse()处理参数
+        // 参数是有基本类型数据组成的数组时，刷新页面能正常显示
         query: {
-          'A': JSON.stringify([
-            {name: '张三'},
-            {name: '张三'},
-            {name: '张三'},
-            {name: '张三'},
-            {name: '张三'},
-            {name: '张三'},
-            {name: '张三'},
-          ])
+          'nameObj': JSON.stringify({name: '张三'})
         }
       })
     }

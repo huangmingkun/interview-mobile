@@ -1,7 +1,9 @@
 <template>
   <div>
-    <div>query：{{ JSON.parse($route.query.A )}}</div>
-    <div>params：{{ $route.params }}</div>
+    <div>query：{{ JSON.parse($route.query.nameObj) }}</div>
+<!--    <div>query：{{ JSON.parse($route.query.nameList) }}</div>-->
+<!--    <div>params：{{ $route.query.name }}</div>-->
+<!--    <div>params：{{ $route.params.name }}</div>-->
   </div>
 </template>
 

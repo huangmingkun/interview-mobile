@@ -325,6 +325,11 @@ const routesStatic = [
     component: () => import('@/views/router-params/pageB')
   },
   {
+    path: '/myInput',
+    name: 'myInput',
+    component: () => import('@/views/test/my-input/index.vue')
+  },
+  {
     path: '*',
     name: 'Err404',
     component: () => import('@/views/test/css-test/Err404')
