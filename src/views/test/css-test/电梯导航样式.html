@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .box1, .box2, .box3 {
+      width: 300px;
+      height: 300px;
+      margin: 200px 0;
+    }
+    .box2 {
+      background-color: #1de0e9;
+    }
+    .box1, .box3 {
+      background-color: #26a2ff;
+    }
+    .a-list {
+      position: fixed;
+      top: 50%;
+      right: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto 0;
+    }
+    .a-list a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 40px;
+      background-color: #98cab5;
+      text-decoration: none;
+    }
+    .a-list a:nth-child(2) {
+      background-color: #9a6e3a;
+    }
+  </style>
+</head>
+<body>
+<div class="box1" id="box1"></div>
+<div class="box2" id="box2"></div>
+<div class="box3" id="box3"></div>
+<div class="a-list">
+  <a href="#box1">生鲜</a>
+  <a href="#box2">水果</a>
+  <a href="#box3">日用品</a>
+</div>
+</body>
+</html>
