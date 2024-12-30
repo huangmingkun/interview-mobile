@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<script>
+  function Foo() {
+    getName = function () { alert(1)}
+    return this
+  }
+  Foo.getName = function () { alert(2)}
+  Foo.prototype.getName = function () { alert(3)}
+  var getName = function () {alert(4)}
+
+  // 运算符优先级   . = new ...(...) 带参数 > 函数调用 ...(...) > new ... 不带参数
+
+  // Foo().getName() // 1  调用Foo()时，function () { alert(1)}赋值给全局变量this.getName,并返回全局变量的this
+  // this.getName() // 1  执行上述的Foo()后，会将function () { alert(1)}替换function () {alert(4)}
+  // Foo.getName() // 2
+  // new Foo.getName() // 2  .运算符比不带参数的new优先级高，因此会先执行Foo.getName，与new (Foo.getName)()等价
+  new Foo().getName() // 3 执行顺序  (new Foo()).getName  由于创建Foo实例时，构造函数内部getName不是挂在this上，因此创建出来的实例不存在getName方法，则会从原型链上找，因此输出3
+
+</script>
+</body>
+</html>
