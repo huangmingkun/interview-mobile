@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<script>
+  // 'use strict'
+
+  var aa = 123
+  console.log('window.aa', window.aa) // 123 严格和非严格模式模式，在全局作用域下，var声明变量的赋值都会添加到window上
+
+  // aa = 123 // 严格模式下，没有声明变量则会报错
+
+  function test () {
+    var bb = 666
+    console.log('window.bb', window.bb) // undefined 在函数作用域内，使用var声明变量的赋值不会添加到window上
+
+    cc = 777
+    console.log('window.bb', window.cc) // 777 非严格模式下，在函数作用域内，不声明变量的赋值也会添加到window上
+  }
+  test()
+
+</script>
+</body>
+</html>
